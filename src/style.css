@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(243, 247, 250);
+}
+
+header{
+    background-image: url(https://wallpaperaccess.com/full/370969.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    align-items: center;
+    line-height: 10px;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 40pt;
+    color: white;
+    line-height: 1px;
+     /*Fuente por definir, no puedo poner la bonita de los bocetos*/
+}
+
+h3{
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+}
+
+h4{
+    text-align: left;
+    font-size: 18pt;
+    font-family: Tahoma;
+    color: rgb(83, 83, 83);
+}
+
+.searcher{
+    background-color: rgb(50, 166, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1050px;
+    min-width: 250px;
+    border-radius: 8px;
+    padding: 0.3rem;
+    box-sizing: content-box;
+}
+
+
+table {
+    font-family: Tahoma;
+    font-size: 12pt;
+    background-color: rgb(253, 254, 255);
+    border-spacing: 10px 15px;
+    text-align: left;
+    position: absolute;
+    left: 70px;
+  }
+
+
+footer{
+    font-size: 8pt;
+    text-align: center;
+    color: rgb(156, 156, 156);
+    background-color: rgb(228, 228, 228);
+    padding: 3rem;
+    border-spacing: 4px;
+}
