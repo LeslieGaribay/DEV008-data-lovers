@@ -1,69 +1,72 @@
-body{
+body {
     background-color: rgb(243, 247, 250);
+    height: 100%;
+    width: 100%;
 }
 
-header{
+header {
     background-image: url(https://wallpaperaccess.com/full/370969.jpg);
     background-size: cover;
     background-position: center;
-    height: 200px;
-    padding-top: 80px;
+    height: 700px;
+    width: 100%;
+    left: 0;
+    top: 0;
     padding-bottom: 150px;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     line-height: 10px;
-    
 }
 
-h1{
+h1 {
+    width: 100%;
+    font-family: 'jsMath-cmr10';
+    font-size: 90px;
     text-align: center;
-    font-size: 40pt;
-    color: white;
-    line-height: 1px;
-     /*Fuente por definir, no puedo poner la bonita de los bocetos*/
+    color: #FDFEFF;
 }
 
-h3{
+p1 {
+    width: 100%;
+    height: 71px;
+    font-family: helvetica;
+    font-style: normal;
+    font-size: 30px;
     text-align: center;
-    font-size: 16pt;
-    color: white;
+    color: #FDFEFF;
 }
 
-h4{
-    text-align: left;
-    font-size: 18pt;
-    font-family: Tahoma;
-    color: rgb(83, 83, 83);
+main {
+    background-color: rgb(243, 247, 250, 1);
+    align-items: center;
+    width: 100%;
 }
 
-.searcher{
+.search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -50px;
+}
+
+.search-bar-block {
     background-color: rgb(50, 166, 202);
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1050px;
-    min-width: 250px;
+    width: 1050px;
+    height: 133px;
     border-radius: 8px;
-    padding: 0.3rem;
-    box-sizing: content-box;
+    position: absol
 }
 
-
-table {
-    font-family: Tahoma;
-    font-size: 12pt;
-    background-color: rgb(253, 254, 255);
-    border-spacing: 10px 15px;
-    text-align: left;
-    position: absolute;
-    left: 70px;
-  }
-
-
-footer{
-    font-size: 8pt;
-    text-align: center;
-    color: rgb(156, 156, 156);
-    background-color: rgb(228, 228, 228);
-    padding: 3rem;
-    border-spacing: 4px;
+.barra-buscar {
+    border-radius: 5px;
+    border: 1px solid #39c;
+    padding-top: 37px;
+    width: 700px;
+    height: 68px;
 }
