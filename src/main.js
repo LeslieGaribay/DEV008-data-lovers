@@ -6,7 +6,7 @@ import data from './data/ghibli/ghibli.js';
 
 
 let movieTitlesFromDataBase = data.films.map(film => film.title);
-const movieLibrary = document.getElementById('movieLibrary');
+const movieLibrary = document.getElementById('movie-library');
 let firstMovieTitle = movieTitlesFromDataBase[0];
 movieLibrary.innerText = firstMovieTitle;
 
