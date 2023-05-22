@@ -10,13 +10,7 @@ import data from './data/ghibli/ghibli.js'; // lo que nos trae la base de datos 
 // let firstMovieTitle = movieTitlesFromDataBase[0];
 // movieLibrary.innerText = firstMovieTitle;
 
-
-
-// let moviePostersFromDataBase = data.films.map(film => film.poster);
-// const posterImageLocation = document.getElementById('poster');
-// const showPosterImage = document.createElement("img").src =
-
-
+// let director = data.films.map(film => film.director);
 
 // Crear un template para cada película en el arreglo del Ghibli.js:
 
@@ -38,3 +32,41 @@ for (let movieIndex = 0; movieIndex < data.films.length; movieIndex++){ // Vamos
     movieSection.appendChild(templateClone); // Aquí estamos poniendo el clon en el movieSection
 
 }
+
+function addFilmToLibrary(film) {
+    let templateClone = movieTemplate.content.cloneNode(true); 
+    let moviePoster = templateClone.querySelector(".movie-poster"); 
+    let movieTitle = templateClone.querySelector(".movie-title");
+    let movieYear = templateClone.querySelector(".movie-year");
+
+    movieTitle.innerText = film.title; 
+    movieYear.innerText = "(" + film.release_date + ")"; 
+    moviePoster.src = film.poster;
+
+    movieSection.appendChild(templateClone);
+}
+
+
+
+const filterButtons = document.querySelectorAll(".button-filter")
+console.log({filterButtons})
+const filterButton = filterButtons[0]
+console.log({filterButton})
+
+filterButton.addEventListener("click", (event) => {
+
+    
+    movieSection.innerHTML = "";
+
+    const button = event.target
+    const filmProperty = button.dataset.property // director
+    const filmPropertyValue = button.dataset.value // Hayao Miyazaki
+    const filteredMovies = data.films.filter(film => film[filmProperty] === filmPropertyValue );
+
+    for (let movieIndex = 0; movieIndex < filteredMovies.length; movieIndex++) { 
+        const filteredMovie = filteredMovies[movieIndex]
+             addFilmToLibrary(filteredMovie)
+    }
+
+})
+

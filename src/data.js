@@ -9,3 +9,4 @@ export const filterData = (data, condition) => {
 export const anotherExample = () => {
   return 'OMG';
 };
+

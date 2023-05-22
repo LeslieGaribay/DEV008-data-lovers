@@ -119,18 +119,18 @@ main {
 .filter-box {
     border-radius: 10px;
     width: 260px;
-    height: 512px;
+    height: 1225px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 /* Inicio de contenido aside (botones que filtran peliculas)*/
-.fexbox-filter-list {
+.flexbox-filter-list {
     width: 216PX;
     height: 400px;
     margin-top: 32px;
-    margin-left: 31px;
+    margin-left: 20px;
 }
 
 p2 {
@@ -148,7 +148,20 @@ p2 {
     text-align: left;
 }
 
+.sub-filter-list-button{
+    border: none;
+    background-color: rgba(253, 254, 255, 1);
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: left;
+    margin-left: 28px;
+}
+
 .filter-list-button:hover {
+    color: #39c;
+}
+
+.sub-filter-list-button:hover {
     color: #39c;
 }
 
@@ -158,8 +171,7 @@ p2 {
 .flexbox-item2 {
     background: rgba(253, 254, 255, 1);
     margin-left: 21px;
-    border-radius: 10px;
-  
+    border-radius: 10px;  
 }
 
 .index-movies-library {
