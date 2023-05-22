@@ -1,3 +1,4 @@
+
 body {
     background-color: rgb(243, 247, 250);
     height: 100%;
@@ -153,28 +154,29 @@ p2 {
 
 /* Fin de contenido aside (botones que filtran peliculas)*/
 
-/* Inicio de contenido section (libreria de peliculas)*/
+/* Inicio de contenido section (librería de películas)*/
 .flexbox-item2 {
     background: rgba(253, 254, 255, 1);
     margin-left: 21px;
+    border-radius: 10px;
+  
 }
 
 .index-movies-library {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    grid-template-rows: repeat(5, 460px);
     align-content: center;
-    border-radius: 10px;
-    width: 1135px;
-    height: 800px;
 }
 
 .flexbox-container-library {
-    width: 1092px;
-    margin-top: 30px;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 45px;
 }
 
 
-/* Modelo ejemplo de como se ve 1 pelicula en libreria */
+/* Modelo ejemplo de cómo se ve 1 película en librería */
 .each-movie-article {
     height: 410px;
     width: 201px;
@@ -183,9 +185,10 @@ p2 {
     text-align: center;
 }
 
-.poster {
+.movie-poster {
 
     width: 201px;
+    height: 302px;
     border-radius: 10px;
     margin-bottom: 18px;
 }
