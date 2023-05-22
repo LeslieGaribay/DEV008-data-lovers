@@ -34,13 +34,17 @@
         </div>
       </aside>
       <section class="flexbox-item2 index-movies-library">
-        <div class="flexbox-container-library">
-          <article class="each-movie-article">
-            <img class="poster" src="/img/Pom_Poko.webp" alt="poster-pompoko">
-            <p3>Pom Poko<br>(1899)</p3>
-          </article>
-          <p4 id="movie-library"></p4>
-        </div>
+
+        <template id="movie-template">
+          <div class="flexbox-container-library">
+            <article class="each-movie-article">
+              <img class="movie-poster" src="/img/Pom_Poko.webp" alt="poster-pompoko">
+              <p3 class="movie-title">Pom Poko</p3>
+              <p3 class="movie-year">(1994)</p3>
+            </article>
+          </div>
+        </template>
+
       </section>
     </div>
   </main>
