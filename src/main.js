@@ -48,25 +48,24 @@ function addFilmToLibrary(film) {
 
 
 
-const filterButtons = document.querySelectorAll(".button-filter")
+const filterButtons = document.querySelectorAll(".filter-list .sub-filter-list-button")
 console.log({filterButtons})
-const filterButton = filterButtons[0]
-console.log({filterButton})
 
-filterButton.addEventListener("click", (event) => {
+filterButtons.forEach(filterButton => filterButton.addEventListener("click", FilterAndShowMovies))
 
+
+function FilterAndShowMovies (event) {
     
     movieSection.innerHTML = "";
 
     const button = event.target
     const filmProperty = button.dataset.property // director
     const filmPropertyValue = button.dataset.value // Hayao Miyazaki
-    const filteredMovies = data.films.filter(film => film[filmProperty] === filmPropertyValue );
+    const filteredMovies = data.films.filter(film => film[filmProperty] === filmPropertyValue);
 
     for (let movieIndex = 0; movieIndex < filteredMovies.length; movieIndex++) { 
         const filteredMovie = filteredMovies[movieIndex]
              addFilmToLibrary(filteredMovie)
     }
 
-})
-
+}
