@@ -47,7 +47,6 @@ function addFilmToLibrary(film) {
 }
 
 
-
 const filterButtons = document.querySelectorAll(".filter-list .sub-filter-list-button")
 console.log({filterButtons})
 
