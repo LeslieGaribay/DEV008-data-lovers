@@ -60,7 +60,19 @@ function FilterAndShowMovies (event) {
     const button = event.target
     const filmProperty = button.dataset.property // director
     const filmPropertyValue = button.dataset.value // Hayao Miyazaki
-    const filteredMovies = data.films.filter(film => film[filmProperty] === filmPropertyValue);
+    let filteredMovies = null;
+    if (filmProperty == "rt_score") {
+        switch (filmPropertyValue) {
+            case "Fresh status":
+                filteredMovies = data.films.filter(film => film[filmProperty] >= 60);
+                break;
+            case "Rotten status":
+                filteredMovies = data.films.filter(film => film[filmProperty] < 60);
+                break;
+        }
+    } else {
+        filteredMovies = data.films.filter(film => film[filmProperty] === filmPropertyValue);
+    }
 
     for (let movieIndex = 0; movieIndex < filteredMovies.length; movieIndex++) { 
         const filteredMovie = filteredMovies[movieIndex]
