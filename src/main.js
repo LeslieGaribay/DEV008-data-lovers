@@ -45,6 +45,12 @@ function addFilmToLibrary(film) {
 
     movieSection.appendChild(templateClone);
 }
+function addFilmsToLibrary(films) {// Para el boton de busqueda
+    for (let movieIndex = 0; movieIndex < films.length; movieIndex++) { 
+        const filteredMovie = films[movieIndex];
+        addFilmToLibrary(filteredMovie);
+    }
+}
 
 
 const filterButtons = document.querySelectorAll(".filter-list .sub-filter-list-button")
@@ -74,9 +80,5 @@ function FilterAndShowMovies (event) {
         filteredMovies = data.films.filter(film => film[filmProperty] === filmPropertyValue);
     }
 
-    for (let movieIndex = 0; movieIndex < filteredMovies.length; movieIndex++) { 
-        const filteredMovie = filteredMovies[movieIndex]
-             addFilmToLibrary(filteredMovie)
-    }
-
+    addFilmsToLibrary(filteredMovies)
 }
