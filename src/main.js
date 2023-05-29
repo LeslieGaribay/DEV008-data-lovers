@@ -54,9 +54,10 @@ function addFilmsToLibrary(films) {// Para el boton de busqueda
 
 
 const filterButtons = document.querySelectorAll(".filter-list .sub-filter-list-button")
-console.log({filterButtons})
-
 filterButtons.forEach(filterButton => filterButton.addEventListener("click", FilterAndShowMovies))
+
+const searchButton = document.getElementById("search-button");
+searchButton.addEventListener("click", SearchMovies);
 
 
 function FilterAndShowMovies (event) {
@@ -79,6 +80,24 @@ function FilterAndShowMovies (event) {
     } else {
         filteredMovies = data.films.filter(film => film[filmProperty] === filmPropertyValue);
     }
+
+    addFilmsToLibrary(filteredMovies)
+}
+
+function SearchMovies (event) {
+    
+    movieSection.innerHTML = "";
+    
+    // Agregar codigo para traer el input text, y sacar el texto de busqueda
+    const searchBarValue = document.getElementById("searchBar").value;
+
+
+    let filteredMovies = null;
+    
+    // Agregar codigo para filtrar por titulo (solo por mientras, luego por mas propiedades)
+    filteredMovies = data.films.filter(film => film["title"].includes(searchBarValue));
+
+
 
     addFilmsToLibrary(filteredMovies)
 }
