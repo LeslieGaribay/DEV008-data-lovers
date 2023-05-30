@@ -56,10 +56,6 @@ function addFilmsToLibrary(films) {// Para el boton de busqueda
 const filterButtons = document.querySelectorAll(".filter-list .sub-filter-list-button")
 filterButtons.forEach(filterButton => filterButton.addEventListener("click", FilterAndShowMovies))
 
-const searchButton = document.getElementById("search-button");
-searchButton.addEventListener("click", SearchMovies);
-
-
 function FilterAndShowMovies(event) {
 
     movieSection.innerHTML = "";
@@ -84,20 +80,23 @@ function FilterAndShowMovies(event) {
     addFilmsToLibrary(filteredMovies)
 }
 
+const searchButton = document.getElementById("search-button");
+searchButton.addEventListener("click", SearchMovies);
+const searchInput = document.getElementById("searchBar");
+searchInput.addEventListener("input", SearchMovies);
+
+
 function SearchMovies(event) {
 
     movieSection.innerHTML = "";
 
-    // Agregar codigo para traer el input text, y sacar el texto de busqueda
+    // Agregar código para traer el input text, y sacar el texto de búsqueda
     const searchBarValue = document.getElementById("searchBar").value;
-
 
     let filteredMovies = null;
 
-    // Agregar codigo para filtrar por titulo (solo por mientras, luego por mas propiedades)
+    // Agregar código para filtrar por título (solo por mientras, luego por más propiedades)
     filteredMovies = data.films.filter(film => film["title"].toLowerCase().includes(searchBarValue.toLowerCase()));
-
-
 
     addFilmsToLibrary(filteredMovies)
 }
