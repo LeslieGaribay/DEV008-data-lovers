@@ -9,7 +9,7 @@ export default {
       "producer": "Isao Takahata",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg",
       "release_date": "1986",
-      "rt_score": "95",
+      "rt_score": 95,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/125877.jpg",
       "people": [
@@ -213,7 +213,7 @@ export default {
       "producer": "Hayao Miyazaki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
       "release_date": "1988",
-      "rt_score": "93",
+      "rt_score": 93,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/33505.jpg",
       "people": [
@@ -363,7 +363,7 @@ export default {
       "producer": "Hayao Miyazaki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/4/48/Kiki%27s_Delivery_Service_%282%29.jpg",
       "release_date": "1989",
-      "rt_score": "96",
+      "rt_score": 96,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/4132842.jpg",
       "people": [
@@ -491,7 +491,7 @@ export default {
       "producer": "Toru Hara",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg",
       "release_date": "1988",
-      "rt_score": "97",
+      "rt_score": 97,
       "classification": "Parental Guidance Suggested",
       "second_image": "https://wallpaperaccess.com/full/2001927.jpg",
       "people": [
@@ -557,7 +557,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Only_Yesterday.jpg",
       "release_date": "1991",
-      "rt_score": "100",
+      "rt_score": 100,
       "classification": "Parental Guidance Suggested",
       "second_image": "https://wallpaperaccess.com/full/2406664.jpg",
       "people": [
@@ -695,7 +695,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/4/41/Porco_Rosso.jpg",
       "release_date": "1992",
-      "rt_score": "94",
+      "rt_score": 94,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/1542333.jpg",
       "people": [
@@ -818,7 +818,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Pom_Poko.jpg",
       "release_date": "1994",
-      "rt_score": "78",
+      "rt_score": 78,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/8105917.jpg",
       "people": [
@@ -894,7 +894,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/7/7b/Whisper_of_the_Heart.jpg",
       "release_date": "1995",
-      "rt_score": "91",
+      "rt_score": 91,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/1459613.jpg",
       "people": [
@@ -1012,7 +1012,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c6/Princess_Mononoke.jpg",
       "release_date": "1997",
-      "rt_score": "92",
+      "rt_score": 92,
       "classification": "Parental Guidance Suggested",
       "second_image": "https://wallpaperaccess.com/full/163574.jpg",
       "people": [
@@ -1158,7 +1158,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbors_the_Yamadas.jpg",
       "release_date": "1999",
-      "rt_score": "75",
+      "rt_score": 75,
       "classification": "General Audience",
       "second_image": "https://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2019/12/my_neighbors_08_02_05_05.jpg",
       "people": [
@@ -1224,7 +1224,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Spirited_Away.png",
       "release_date": "2001",
-      "rt_score": "97",
+      "rt_score": 97,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/400686.jpg",
       "people": [
@@ -1363,7 +1363,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Cat_Returns.jpg",
       "release_date": "2002",
-      "rt_score": "89",
+      "rt_score": 89,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/2350964.jpg",
       "people": [
@@ -1496,7 +1496,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/0/08/Howl%27s_Moving_Castle.jpg",
       "release_date": "2004",
-      "rt_score": "87",
+      "rt_score": 87,
       "classification": "Parental Guidance Suggested",
       "second_image": "https://wallpaperaccess.com/full/1085374.jpg",
       "people": [
@@ -1637,7 +1637,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/0/09/%C3%96v%C3%A4rlden.jpg",
       "release_date": "2006",
-      "rt_score": "41",
+      "rt_score": 41,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/2407460.jpg",
       "people": [
@@ -1745,7 +1745,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/5/50/Ponyo_on_the_Cliff_by_the_Sea.jpg",
       "release_date": "2008",
-      "rt_score": "92",
+      "rt_score": 92,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/3189256.jpg",
       "people": [
@@ -1897,7 +1897,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://m.media-amazon.com/images/M/MV5BZDY3ZGI0ZDAtMThlNy00MzAxLTg4YjAtNjkwYTkxNmQ4MjdlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
       "release_date": "2010",
-      "rt_score": "95",
+      "rt_score": 95,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/4161558.jpg",
       "people": [
@@ -2016,7 +2016,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/b/bb/From_Up_on_Poppy_Hill.jpg",
       "release_date": "2011",
-      "rt_score": "83",
+      "rt_score": 83,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/2682164.jpg",
       "people": [
@@ -2124,7 +2124,7 @@ export default {
       "producer": "Toshio Suzuki",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/2/2d/The_Wind_Rises.jpg",
       "release_date": "2013",
-      "rt_score": "89",
+      "rt_score": 89,
       "classification": "Parental Guidance Suggested",
       "second_image": "https://wallpaperaccess.com/full/2135774.png",
       "people": [
@@ -2245,7 +2245,7 @@ export default {
       "producer": "Yoshiaki Nishimura",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Tale_of_the_Princess_Kaguya.jpg",
       "release_date": "2013",
-      "rt_score": "100",
+      "rt_score": 100,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/6374665.jpg",
       "people": [
@@ -2353,7 +2353,7 @@ export default {
       "producer": "Yoshiaki Nishimura",
       "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/7/7a/When_Marnie_Was_There.jpg",
       "release_date": "2014",
-      "rt_score": "92",
+      "rt_score": 92,
       "classification": "General Audience",
       "second_image": "https://wallpaperaccess.com/full/2298409.jpg",
       "people": [

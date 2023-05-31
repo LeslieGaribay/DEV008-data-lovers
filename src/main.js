@@ -1,7 +1,7 @@
 // import { example } from './data.js';
 // en este import data.js se traen las funciones filterdata / sortdata / computestats
 import data from './data/ghibli/ghibli.js'; // lo que nos trae la base de datos GHIBLI
-
+import { SortByMovies } from './data.js'
 
 
 
@@ -102,64 +102,25 @@ function SearchMovies(event) {
 }
 
 const sortByButtons = document.querySelectorAll(".sort-by-option")
-sortByButtons.forEach(sortByButton => sortByButton.addEventListener("click", SortByMovies))
+sortByButtons.forEach(sortByButton => sortByButton.addEventListener("click", SortByMoviesWrapper))
 
-function SortByMovies(event) {
-    movieSection.innerHTML = "";
-
+function SortByMoviesWrapper (event) {
     const button = event.target
     const sortByProperty = button.dataset.property
-    console.log(sortByProperty)
-    let filteredMovies = [];
-
-    switch (button.innerText) {
-        case "A-Z":
-            filteredMovies = data.films.filter(film => film[sortByProperty]).sort((a, b) => {
-                if (a.title > b.title) {
-                    return 1;
-                } else if (b.title > a.title) {
-                    return -1;
-                } else {
-                    return 0;
-                }
-            });
+    
+    let sortOrder = 1;
+    switch (button.dataset.order) {
+        case "asc":
+            sortOrder = 1; // Ascendente
             break;
-
-        case "Z-A":
-            filteredMovies = data.films.filter(film => film[sortByProperty]).sort((a, b) => {
-                if (b.title > a.title) {
-                    return 1;
-                } else if (a.title > b.title) {
-                    return -1;
-                } else {
-                    return 0;
-                }
-            });
-            break;
-
-        case "Latest to oldest":
-            filteredMovies = data.films.filter(film => film[sortByProperty]).sort((a, b) => {
-                if (b.release_date > a.release_date) {
-                    return 1;
-                } else if (a.release_date > b.release_date) {
-                    return -1;
-                } else {
-                    return 0;
-                }
-            });
-            break;
-
-        case "Oldest to latest":
-            filteredMovies = data.films.filter(film => film[sortByProperty]).sort((a, b) => {
-                if (a.release_date > b.release_date) {
-                    return 1;
-                } else if (b.release_date > a.release_date) {
-                    return -1;
-                } else {
-                    return 0;
-                }
-            });
+        case "desc":
+            sortOrder = -1; // Descendente
             break;
     }
-    addFilmsToLibrary(filteredMovies)
+
+    let sortedMovies = SortByMovies(data, sortByProperty, sortOrder)
+    
+    
+    movieSection.innerHTML = "";
+    addFilmsToLibrary(sortedMovies)
 }

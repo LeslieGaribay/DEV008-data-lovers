@@ -141,7 +141,8 @@ main {
     background: rgba(235, 235, 235, 1);
     position: absolute;
     top: 65%;
-    width: 230px;
+    width: 300px;
+    height: 450px;
     padding: 0;
 }
 
@@ -186,7 +187,7 @@ main {
 .filter-box {
     border-radius: 10px;
     width: 260px;
-    height: 1225px;
+    height: 1050px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -207,6 +208,16 @@ p2 {
     font-size: 32px;
 }
 
+p5 {
+    border: none;
+    background-color: rgba(253, 254, 255, 1);
+    font-size: 24px;
+    margin-top: 36px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'Helvetica';
+}
+
 .filter-list-button {
     border: none;
     background-color: rgba(253, 254, 255, 1);
@@ -222,10 +233,6 @@ p2 {
     margin-top: 25px;
     text-align: left;
     margin-left: 28px;
-}
-
-.filter-list-button:hover {
-    color: #39c;
 }
 
 .sub-filter-list-button:hover {

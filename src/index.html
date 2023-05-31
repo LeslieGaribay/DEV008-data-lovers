@@ -34,10 +34,12 @@
         </li>
       </ul class="">
       <ul class="options-to-click-sort-by">
-        <li class="sort-by-option" data-property="release_date">Latest to oldest</li>
-        <li class="sort-by-option" data-property="release_date">Oldest to latest</li>
-        <li class="sort-by-option" data-property="title">A-Z</li>
-        <li class="sort-by-option" data-property="title">Z-A</li>
+        <li class="sort-by-option" data-order="desc" data-property="release_date">Latest to oldest</li>
+        <li class="sort-by-option" data-order="asc" data-property="release_date">Oldest to latest</li>
+        <li class="sort-by-option" data-order="asc" data-property="title">A - Z</li>
+        <li class="sort-by-option" data-order="desc" data-property="title">Z - A</li>
+        <li class="sort-by-option" data-order="asc" data-property="rt_score">Tomatometer&#169 (Lowest to highest)</li>
+        <li class="sort-by-option" data-order="desc" data-property="rt_score">Tomatometer&#169 (Highest to lowest)</li>
       </ul>
       </div>
     </nav>
@@ -52,13 +54,6 @@
               Audience</button>
             <button class="sub-filter-list-button" data-property="classification"
               data-value="Parental Guidance Suggested">Parental Guidance Suggested</button>
-          </div>
-          <div class="filter-list score">
-            <button class="filter-list-button">Tomatometer Score</button>
-            <button class="sub-filter-list-button" data-property="rt_score" data-value="Fresh status">Fresh
-              status</button>
-            <button class="sub-filter-list-button" data-property="rt_score" data-value="Rotten status">Rotten
-              status</button>
           </div>
           <div class="filter-list director">
             <button class="filter-list-button">Director</button>
