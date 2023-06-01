@@ -1,6 +1,6 @@
 // en este import data.js se traen las funciones filterdata / sortdata / computestats
 import data from './data/ghibli/ghibli.js'; // lo que nos trae la base de datos GHIBLI
-import { SortByMovies, FilterData } from './data.js'
+import { FilterAndSortMovies } from './data.js'
 
 
 // let movieTitlesFromDataBase = data.films.map(film => film.title);
@@ -56,12 +56,14 @@ function addFilmsToLibrary(films) {// Para el boton de busqueda
 const filterButtons = document.querySelectorAll(".filter-list .sub-filter-list-button")
 filterButtons.forEach(filterButton => filterButton.addEventListener("click", FilterMoviesWrapper))
 
+
+
 function FilterMoviesWrapper (event) {
   const button = event.target
   const filmProperty = button.dataset.property // director
   const filmPropertyValue = button.dataset.value // Hayao Miyazaki
 
-  const filteredFilms = FilterData(data, filmProperty, filmPropertyValue);
+  const filteredFilms = FilterAndSortMovies(data.films, filmProperty, filmPropertyValue, undefined, undefined);
 
   movieSection.innerHTML = "";
   addFilmsToLibrary(filteredFilms)
@@ -85,7 +87,7 @@ function SearchMovies() {
   let filteredMovies = null;
 
   // Agregar código para filtrar por título (solo por mientras, luego por más propiedades)
-  filteredMovies = data.films.filter(film => film["title"].toLowerCase().includes(searchBarValue.toLowerCase()));
+  filteredMovies = films.filter(film => film["title"].toLowerCase().includes(searchBarValue.toLowerCase()));
 
   addFilmsToLibrary(filteredMovies)
 }
@@ -109,7 +111,7 @@ function SortByMoviesWrapper (event) {
     break;
   }
 
-  const sortedMovies = SortByMovies(data, sortByProperty, sortOrder)
+  const sortedMovies = FilterAndSortMovies(data.films, undefined, undefined, sortByProperty, sortOrder)
     
     
   movieSection.innerHTML = "";
