@@ -87,7 +87,7 @@ function SearchMovies() {
   let filteredMovies = null;
 
   // Agregar código para filtrar por título (solo por mientras, luego por más propiedades)
-  filteredMovies = films.filter(film => film["title"].toLowerCase().includes(searchBarValue.toLowerCase()));
+  filteredMovies = data.films.filter(film => film["title"].toLowerCase().includes(searchBarValue.toLowerCase()));
 
   addFilmsToLibrary(filteredMovies)
 }
