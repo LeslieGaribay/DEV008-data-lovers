@@ -1,8 +1,6 @@
-// import { example } from './data.js';
 // en este import data.js se traen las funciones filterdata / sortdata / computestats
 import data from './data/ghibli/ghibli.js'; // lo que nos trae la base de datos GHIBLI
-import { SortByMovies } from './data.js'
-
+import { SortByMovies, FilterData } from './data.js'
 
 
 // let movieTitlesFromDataBase = data.films.map(film => film.title);
@@ -45,6 +43,8 @@ function addFilmToLibrary(film) {
 
     movieSection.appendChild(templateClone);
 }
+
+
 function addFilmsToLibrary(films) {// Para el boton de busqueda
     for (let movieIndex = 0; movieIndex < films.length; movieIndex++) {
         const filteredMovie = films[movieIndex];
@@ -54,31 +54,20 @@ function addFilmsToLibrary(films) {// Para el boton de busqueda
 
 
 const filterButtons = document.querySelectorAll(".filter-list .sub-filter-list-button")
-filterButtons.forEach(filterButton => filterButton.addEventListener("click", FilterAndShowMovies))
+filterButtons.forEach(filterButton => filterButton.addEventListener("click", FilterMoviesWrapper))
 
-function FilterAndShowMovies(event) {
-
-    movieSection.innerHTML = "";
-
+function FilterMoviesWrapper (event) {
     const button = event.target
     const filmProperty = button.dataset.property // director
     const filmPropertyValue = button.dataset.value // Hayao Miyazaki
-    let filteredMovies = null;
-    if (filmProperty == "rt_score") {
-        switch (filmPropertyValue) {
-            case "Fresh status":
-                filteredMovies = data.films.filter(film => film[filmProperty] >= 60);
-                break;
-            case "Rotten status":
-                filteredMovies = data.films.filter(film => film[filmProperty] < 60);
-                break;
-        }
-    } else {
-        filteredMovies = data.films.filter(film => film[filmProperty] === filmPropertyValue);
+
+    let filteredFilms = FilterData(data, filmProperty, filmPropertyValue);
+
+    movieSection.innerHTML = "";
+    addFilmsToLibrary(filteredFilms)
     }
 
-    addFilmsToLibrary(filteredMovies)
-}
+
 
 const searchButton = document.getElementById("search-button");
 searchButton.addEventListener("click", SearchMovies);
@@ -100,6 +89,8 @@ function SearchMovies(event) {
 
     addFilmsToLibrary(filteredMovies)
 }
+
+
 
 const sortByButtons = document.querySelectorAll(".sort-by-option")
 sortByButtons.forEach(sortByButton => sortByButton.addEventListener("click", SortByMoviesWrapper))
