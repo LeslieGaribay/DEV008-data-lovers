@@ -134,6 +134,7 @@ main {
 .sort-by-option:hover {
     color: #FDFEFF;
     background-color: #39c;
+    cursor: pointer;
 }
 
 .options-to-click-sort-by {
@@ -235,8 +236,10 @@ p5 {
     margin-left: 28px;
 }
 
+
 .sub-filter-list-button:hover {
     color: #39c;
+    cursor: pointer;
 }
 
 /* Fin de contenido aside (botones que filtran peliculas)*/
@@ -317,3 +320,7 @@ p4 {
 }
 
 /*end Footer*/
+
+.jhgjhghfhghjgjhgjhg {
+    color:#39c;
+}

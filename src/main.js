@@ -56,10 +56,15 @@ function addFilmsToLibrary(films) {// Para el boton de busqueda
 const filterButtons = document.querySelectorAll(".filter-list .sub-filter-list-button")
 filterButtons.forEach(filterButton => filterButton.addEventListener("click", FilterMoviesWrapper))
 
-
+function highlightButton (buttooooon) {
+  const filterButtons = document.querySelectorAll(".filter-list .sub-filter-list-button")
+  filterButtons.forEach(filterButton => filterButton.className = filterButton.className.replace(" jhgjhghfhghjgjhgjhg", ""))
+  buttooooon.className += " jhgjhghfhghjgjhgjhg";
+}
 
 function FilterMoviesWrapper (event) {
   const button = event.target
+  highlightButton(button);
   const filmProperty = button.dataset.property // director
   const filmPropertyValue = button.dataset.value // Hayao Miyazaki
 
