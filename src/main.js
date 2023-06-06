@@ -15,7 +15,9 @@ import { FilterAndSortMovies } from './data.js'
 const movieTemplate = document.getElementById("movie-template"); // Traemos el template que vamos a estar clonando
 const movieSection = document.querySelector(".index-movies-library"); // Traemos donde vamos a mostrar los clones del template
 
-for (let movieIndex = 0; movieIndex < data.films.length; movieIndex++) { // Vamos a iterar por todas las películas que están en el data
+
+const movies = data.films;
+for (let movieIndex = 0; movieIndex < movies.length; movieIndex++) { // Vamos a iterar por todas las películas que están en el data
   const movie = data.films[movieIndex]; // Declaramos la película que corresponde a la iteración actual
 
   const templateClone = movieTemplate.content.cloneNode(true); // Declaramos el clon, y con el content.cloneNode y el true le decimos que clone el elemento con todos los hijos
