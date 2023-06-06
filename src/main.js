@@ -1,6 +1,6 @@
 // en este import data.js se traen las funciones filterdata / sortdata / computestats
 import data from './data/ghibli/ghibli.js'; // lo que nos trae la base de datos GHIBLI
-import { FilterAndSortMovies } from './data.js'
+import { FilterAndSortMovies, FilterData } from './data.js'
 
 
 // let movieTitlesFromDataBase = data.films.map(film => film.title);

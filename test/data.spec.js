@@ -1,7 +1,7 @@
 import { FilterData } from '../src/data.js';
 
 const filmsFake = [
-  { title: "a" },
+  {title:"a"},
   {title:"b"},
   {title:"c"},
 ]
@@ -16,16 +16,8 @@ describe('Tests para filterData', () => {
     expect(FilterData(filmsFake, "title", "a")).toStrictEqual([{title:"a"}]);
   });
 
+  it('si no encuentra categoria', () => {
+    expect(FilterData(filmsFake, "title", "d")).toStrictEqual([]);
+  });
 });
 
-
-
-// describe('anotherExample', () => {
-//   it('is a function', () => {
-//     expect(typeof anotherExample).toBe('function');
-//   });
-
-//   it('returns `anotherExample`', () => {
-//     expect(anotherExample()).toBe('OMG');
-//   });
-// });
