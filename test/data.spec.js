@@ -1,23 +1,31 @@
-import { example, anotherExample } from '../src/data.js';
+import { FilterData } from '../src/data.js';
 
+const filmsFake = [
+  { title: "a" },
+  {title:"b"},
+  {title:"c"},
+]
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('Tests para filterData', () => {
+  
+  it('es una funcion', () => {
+    expect(typeof FilterData).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('filtra por categorias', () => {
+    expect(FilterData(filmsFake, "title", "a")).toStrictEqual([{title:"a"}]);
   });
+
 });
 
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
+// describe('anotherExample', () => {
+//   it('is a function', () => {
+//     expect(typeof anotherExample).toBe('function');
+//   });
+
+//   it('returns `anotherExample`', () => {
+//     expect(anotherExample()).toBe('OMG');
+//   });
+// });

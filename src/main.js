@@ -82,19 +82,30 @@ const searchInput = document.getElementById("searchBar");
 searchInput.addEventListener("input", SearchMovies);
 
 
+const MovieNotFoundTemplate = document.createElement("div")
+MovieNotFoundTemplate.classList.add("movie-not-found-container")
+const MovieNotFoundText = document.createElement("p")
+MovieNotFoundText.innerText = "No match found"
+MovieNotFoundText.classList.add("movie-not-found")
+MovieNotFoundTemplate.appendChild(MovieNotFoundText)
+
 function SearchMovies() {
 
   movieSection.innerHTML = "";
 
   // Agregar código para traer el input text, y sacar el texto de búsqueda
   const searchBarValue = document.getElementById("searchBar").value;
-
-  let filteredMovies = null;
-
+  
   // Agregar código para filtrar por título (solo por mientras, luego por más propiedades)
-  filteredMovies = data.films.filter(film => film["title"].toLowerCase().includes(searchBarValue.toLowerCase()));
-
-  addFilmsToLibrary(filteredMovies)
+  const filteredMovies = data.films.filter(film => film["title"].toLowerCase().includes(searchBarValue.toLowerCase()));
+  
+  if (filteredMovies.length === 0) {
+    movieSection.classList.remove("index-movies-library")
+    movieSection.appendChild(MovieNotFoundTemplate)
+  } else {
+    movieSection.classList.add("index-movies-library")
+    addFilmsToLibrary(filteredMovies)
+  }
 }
 
 

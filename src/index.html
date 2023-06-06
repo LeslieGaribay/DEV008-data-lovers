@@ -23,24 +23,28 @@
       </div>
     </div>
 
-    <nav id="sort-by-button">
-      <ul>
-        <li class="sortby-text">Sort by
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="svg"
-            viewBox="0 0 16 16">
-            <path
-              d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-          </svg>
-        </li>
-      </ul>
-      <ul class="options-to-click-sort-by">
-        <li class="sort-by-option" data-order="desc" data-property="release_date">Latest to oldest</li>
-        <li class="sort-by-option" data-order="asc" data-property="release_date">Oldest to latest</li>
-        <li class="sort-by-option" data-order="asc" data-property="title">A - Z</li>
-        <li class="sort-by-option" data-order="desc" data-property="title">Z - A</li>
-        <li class="sort-by-option" data-order="asc" data-property="rt_score">Tomatometer&#169 (Lowest to highest)</li>
-        <li class="sort-by-option" data-order="desc" data-property="rt_score">Tomatometer&#169 (Highest to lowest)</li>
-      </ul>
+    <nav id="sort-section"> 
+      <div id="sort-by-button">
+        <ul id="ul-sort-container">
+          <li class="sortby-text">Sort by
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="svg" viewBox="0 0 16 16">
+              <path
+                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+              <style type="text/css">
+                @import('style.css');
+              </style>
+            </svg>
+          </li>
+        </ul>
+        <ul class="options-to-click-sort-by">
+          <li class="sort-by-option" data-order="desc" data-property="release_date">Latest to oldest</li>
+          <li class="sort-by-option" data-order="asc" data-property="release_date">Oldest to latest</li>
+          <li class="sort-by-option" data-order="asc" data-property="title">A - Z</li>
+          <li class="sort-by-option" data-order="desc" data-property="title">Z - A</li>
+          <li class="sort-by-option" data-order="asc" data-property="rt_score">Tomatometer&#169 Lowest</li>
+          <li class="sort-by-option" data-order="desc" data-property="rt_score">Tomatometer&#169 Highest</li>
+        </ul>
+      </div>
     </nav>
 
     <div class="flexbox">
@@ -97,7 +101,7 @@
     </div>
   </main>
   <footer>
-    <img class="footer-image" src="/img/pngwing.com (2).png" alt="imagen-en-footer-monitos" width="422px">
+    <img class="footer-image" src="img/pngwing.com (2).png" alt="imagen-en-footer-monitos" width="422px">
     <div class="footer-info-section">
       <p4>We are constantly trying to improve our website. Feel free to give us any suggestion at
         ghibli.pedia.fans@gmail.com<br>© 2023 GHIBLIPEDIA.COM</p4>

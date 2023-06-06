@@ -26,7 +26,7 @@ export function SortByMovies(films, sortByProperty, sortOrder) {
 
 let filteredAndSortedMovies = []; // guardar estado 
 export function FilterAndSortMovies(films, filmProperty, filmPropertyValue, sortByProperty, sortOrder){
-  if (filteredAndSortedMovies.length == 0){
+  if (filteredAndSortedMovies.length === 0){
     filteredAndSortedMovies = films;
   }
 
