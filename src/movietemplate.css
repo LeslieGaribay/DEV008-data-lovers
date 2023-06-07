@@ -8,19 +8,45 @@ p1 {
 }
 
 
-
-
 .movie-info-and-characters {
   display: flex;
+}
+
+
+p6 {
+  color: black;
+  font-family: 'Helvetica';
+  font-size: 16px;
+  font-weight: bolder;
+  top: -30px;
+  left: 280px;
+  position: relative;
+  background-color: rgb(253, 254, 255);
+  border-radius: 8px;
+  padding: 10px;
+  height: 18px;
 
 }
 
-p2 {
+span {
   color: rgba(35, 35, 35, 1);
   font-family: 'Helvetica';
-  font-size: 24px;
+  font-size: 10px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  right: 10px;
 }
 
+.name {
+  color: rgba(35, 35, 35, 1);
+  font-family: 'Helvetica';
+  font-size: 12px;
+  position: relative;
+  top: 10px;
+  font-weight: bolder;
+  text-align: center;
+}
 
 .movie-details {
   max-width: 850px;
@@ -85,34 +111,42 @@ p2 {
 
 .movie-details .movie-characters {
   background-color: rgb(243, 247, 250);
-  display: grid;
+}
 
+.flexbox-container-character {
+  padding-left: 30px;
+  /* padding-inline-end: 8px; */
 }
 
 .movie-characters .each-character {
-  height: 410px;
-  width: 201px;
+  width: 200px;
+  height: 160px;
   display: flex;
-  flex-direction: column;
+  position: relative;
+  flex-direction:row;
   justify-content: center;
+  background-color: rgb(35, 90, 133);
+  border-radius: 8px;
+  justify-content: space-around;
 }
 
-.character {
-  width: 120px;
-  padding-top: 180px;
-  
-
+.character-img {
+  width: 80px;
+  height: 120px;
+  position: relative;
+  padding-top: 20px;
+  object-fit: cover;
 }
 
 .movie-characters p {
   color: rgba(35, 35, 35, 1);
   font-family: 'Helvetica';
-  font-size: 14px;
-  font-weight: bold;
-  position: relative;
-  top: 10px;
 }
 
+
+.character-specifications {
+  width: 150px;
+}
 
 .movie-details .movie-info {
   background: rgb(253, 254, 255);
