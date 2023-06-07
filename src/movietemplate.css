@@ -10,6 +10,7 @@ p1 {
 
 .movie-info-and-characters {
   display: flex;
+  background-color: rgb(243, 247, 250);
 }
 
 
@@ -18,22 +19,22 @@ p6 {
   font-family: 'Helvetica';
   font-size: 16px;
   font-weight: bolder;
-  top: -30px;
-  left: 280px;
-  position: relative;
   background-color: rgb(253, 254, 255);
   border-radius: 8px;
   padding: 10px;
-  height: 18px;
+  display: inline-block;
+}
 
+.title-wrapper {
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 span {
   color: rgba(35, 35, 35, 1);
   font-family: 'Helvetica';
-  font-size: 10px;
+  font-size: 12px;
   position: relative;
-  top: 10px;
   left: 10px;
   right: 10px;
 }
@@ -41,11 +42,13 @@ span {
 .name {
   color: rgba(35, 35, 35, 1);
   font-family: 'Helvetica';
-  font-size: 12px;
-  position: relative;
-  top: 10px;
+  font-size: 14px;
   font-weight: bolder;
   text-align: center;
+}
+
+.character-specifications .general-category {
+  font-weight: bolder;
 }
 
 .movie-details {
@@ -62,6 +65,9 @@ span {
   display: flex; 
 }
 
+.movie-screenshot {
+  height: 300px;
+}
 
 .movie-details .second_image {
   border-top-left-radius: 20px;
@@ -103,10 +109,13 @@ span {
 
 .movie-details .movie-poster {
   width: 250px;
+  height: 357px;
   border-radius: 10px;
   margin-left: 60px;  
   position: relative;
-  top: -70px;
+  top: -100px;
+  object-fit: cover;
+
 }
 
 .movie-details .movie-characters {
@@ -114,27 +123,26 @@ span {
 }
 
 .flexbox-container-character {
-  padding-left: 30px;
-  /* padding-inline-end: 8px; */
+  padding-left: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 265px);
 }
 
 .movie-characters .each-character {
-  width: 200px;
+  width: 240px;
   height: 160px;
   display: flex;
-  position: relative;
-  flex-direction:row;
-  justify-content: center;
-  background-color: rgb(35, 90, 133);
+  background-color: rgb(253, 254, 255);
   border-radius: 8px;
-  justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 25px;
+  overflow: hidden;
 }
 
 .character-img {
   width: 80px;
-  height: 120px;
+  height: 100%;
   position: relative;
-  padding-top: 20px;
   object-fit: cover;
 }
 
@@ -146,32 +154,31 @@ span {
 
 .character-specifications {
   width: 150px;
+  justify-content: center;
+  padding-left: 10px;
 }
 
 .movie-details .movie-info {
   background: rgb(253, 254, 255);
   width: 200px;
-  margin-left: 50px;
+  margin-left: 60px;
   line-height: 5px;
   border-radius: 8px;
   height: 235px;
-  position: relative;
-  top: -20px;
-
 }
 
 .movie-details .general {
   font-family: 'Helvetica';
   font-size: 14px;
   font-weight: bold;
-  margin-left: 25px;
+  margin-left: 18px;
   padding-top: 15px;
 }
 
 .movie-details .specific {
   font-family: 'Helvetica';
   font-size: 12px;
-  margin-left: 25px;
+  margin-left: 18px;
 }
 
 

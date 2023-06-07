@@ -35,29 +35,43 @@
         <p class="specific">78</p>
       </aside>
       <section class="movie-characters">
-        <p>Characters</p>
-        <div id="character-template">
-          <div class="flexbox-container-character">
-            <div class="each-character">
-              <img class="character" src="https://static.wikia.nocookie.net/studio-ghibli/images/5/59/Shoukichi_1.jpg" alt="character-pompoko">
-              <p>Name:</p>
-              <p class="name">Shoukichi</p>
-              <p>Gender:</p>
-              <p class="gender">Male</p>
-              <p>Age:</p>
-              <p class="age">Adult</p>
-              <p>Eye color:</p>
-              <p class="eye_color">Black</p>
-              <p>Hair color:</p>
-              <p class="hair_color">Brown</p>
-              <p>Specie:</p>
-              <p class="specie">Raccoon Dog</p>
-          </div>
+        <div class="title-wrapper"><p6>Characters</p6></div>
+        <div class="flexbox-container-character">
+          <template id="character-template">
+            <article class="each-character">
+              <div class="character-image">
+                <img class="character-img" src="https://static.wikia.nocookie.net/studio-ghibli/images/5/59/Shoukichi_1.jpg" alt="character-pompoko">
+              </div>
+              <div class="character-specifications">
+                <p class="name">Shoukichi</p>
+                <div class="gender-section">
+                  <span class="general-category">Gender:</span>
+                  <span class="gender">Male</span>
+                </div>
+                <div class="age-section">
+                  <span class="general-category">Age:</span>
+                  <span class="age">Adult</span>
+                </div>
+                <div class="eye-section">
+                  <span class="general-category">Eye color:</span>
+                  <span class="eye_color">Black</span>
+                </div>                
+                <div class="hair-section">
+                  <span class="general-category">Hair color:</span>
+                  <span class="hair_color">Brown</span>
+                </div>
+                <div class="hair-section">
+                  <span class="general-category">Specie:</span>
+                  <span class="specie">Raccoon Dog</span>
+                </div>
+              </div>
+            </article>
+          </template>
         </div>
-      </div>
     </section>
   </div>
 
+  <script src="movietemplate.js" type="module"></script>
 </body>
 
 </html>
