@@ -1,5 +1,12 @@
 
 export function FilterData(films, filmProperty, filmPropertyValue) {
+  if (!Array.isArray(films)) {
+    throw new TypeError('films is not an array')
+  }
+
+  if (!filmProperty) {
+    throw new TypeError('filmProperty can not be undefined')
+  }
  
   let filteredMovies = [];
   filteredMovies = films.filter(film => film[filmProperty] === filmPropertyValue);

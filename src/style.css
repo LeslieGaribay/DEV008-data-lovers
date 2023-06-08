@@ -466,7 +466,9 @@ p4 {
 
     /* section */
     .flexbox-item2 {
-        padding-top: 0px;
+        display: flex;
+
+        margin-top: 70px;
         margin-left: 10px;
         border-radius: 7px;
         min-width: 682px;
@@ -538,6 +540,222 @@ p4 {
     }
 }
 
+@media (max-width: 844px) {
+    .index-header {
+        height: 300px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-title-flexbox {
+        width: 370px;
+        
+    }
+
+    .logo-ghiblipedia-index {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p1 {
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        height: 51px;
+        font-size: 18px;
+    }
+
+    /* searchbar */
+    .search-container {
+        width: 100%;
+    }
+
+    .search-bar-block {
+        width: 100%;
+        height: 50px;
+        border-radius: 0px;
+    }
+
+    .input-search-movie {
+        border-radius: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 20px;
+        width: 400px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    #search-button {
+        margin-left: 0px;
+        width: 30px;
+    }
+
+    /* sort */
+    #sort-section {
+        top: 0px;
+        padding-right: 10px;
+        width: 100%;
+        height: 34px;
+    }
+
+    #sort-by-button {
+        width: auto;
+        height: 60px;
+    }
+
+    .sortby-text {
+        padding-right: 0;
+        align-items: center;
+        display: flex;
+    }
+
+    .svg {
+        margin-left: 5px;
+        padding: auto;
+        width: 10px;
+    }
+
+    .sort-by-option {
+        height: 10px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .options-to-click-sort-by {
+        top: 80%;
+        width: 180px;
+        height: auto;
+        padding: 0px;
+        right: 10px;
+    }
+
+    #sort-by-button li {
+        font-size: 14px;
+    }
+
+    /* main */
+    .flexbox {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flexbox-item1 {
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    /* aside */
+    .filter-box {
+        border-radius: 5px;
+        width: 60%;
+        height: 230px;
+    }
+
+    .flexbox-filter-list {
+        width: auto;
+        height: auto;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    p2 {
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .filter-list-button {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .sub-filter-list-button {
+        font-size: 13px;
+        margin-top: 8px;
+        margin-left: 7px;
+    }
+
+    /* section */
+    .flexbox-item2 {
+        padding-top: 0px;
+        margin-left: 10px;
+        border-radius: 7px;
+        min-width: 682px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .index-movies-library {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(4, 160px);
+        grid-template-rows: repeat(5, 300px);
+    }
+
+    .flexbox-container-library {
+        width: auto;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+    /* movie template*/
+    .each-movie-article {
+        height: 400px;
+        width: 135px;
+    }
+
+    .movie-poster {
+        width: 135px;
+        height: 196px;
+        border-radius: 7px;
+        margin-bottom: 19px;
+    }
+
+    p3 {
+        font-size: 16px;
+    }
+
+    /*Footer*/
+    footer {
+        height: 228px;
+    }
+
+    .footer-image {
+        padding-top: 100px;
+        width: 20%;
+    }
+
+    .footer-info-section {
+        height: 90px;
+    }
+
+    p4 {
+        font-size: 11px;
+    }
+
+    .movie-not-found {
+        font-size: 35px;
+        font-weight: 600px;
+        color: #a1a1a1;
+    }
+
+    .movie-not-found-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 10rem;
+    }
+}
 /* */
 /* */
 /* */

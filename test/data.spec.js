@@ -19,6 +19,14 @@ describe('Tests para filterData', () => {
   it('si no encuentra categoria', () => {
     expect(FilterData(filmsFake, "title", "d")).toStrictEqual([]);
   });
+
+  it('si el valor no es un array', () => {
+    expect(() => { FilterData(10) }).toThrow('films is not an array');
+  });
+
+  it('si la propiedad no está presente', () => {
+    expect(() => { FilterData([], undefined) }).toThrow('filmProperty can not be undefined');
+  });
 });
 
 const filmYears =[
