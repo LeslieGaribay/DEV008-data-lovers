@@ -1,3 +1,9 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
 
 p1 {
   color: rgba(253, 254, 255, 1);
@@ -9,14 +15,20 @@ p1 {
 
 
 .movie-info-and-characters {
-  display: flex;
+  background-color: rgb(243, 247, 250);
+ }
 
-}
-
-p2 {
+p6 {  
+  color: black;
   color: rgba(35, 35, 35, 1);
   font-family: 'Helvetica';
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: rgb(253, 254, 255);
+  border-radius: 8px;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 
@@ -34,6 +46,9 @@ p2 {
   display: flex; 
 }
 
+.movie-screenshot {
+  height: 280px;
+}
 
 .movie-details .second_image {
   border-top-left-radius: 20px;
@@ -43,7 +58,6 @@ p2 {
   align-items: center;
   border-radius: 10px;
 }
-
 
 .movie-details .second_image img {
   width: 100%;
@@ -75,76 +89,189 @@ p2 {
 
 .movie-details .movie-poster {
   width: 250px;
+  height: 357px;
   border-radius: 10px;
   margin-left: 60px;  
   position: relative;
-  top: -70px;
+  top: -100px;
+  object-fit: cover;
 }
+
+
+/* Sección personajes */
+
 
 .movie-details .movie-characters {
   background-color: rgb(243, 247, 250);
-  display: grid;
-  text-align: center;
-
 }
 
-.subtitle-characters {
-  position: center;
+.flexbox-container-character {
+  padding-left: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 265px);
 }
 
 .movie-characters .each-character {
-  height: 410px;
-  width: 201px;
+  width: 240px;
+  height: 160px;
   display: flex;
-  flex-direction: column;
+  background-color: rgb(253, 254, 255);
+  border-radius: 8px;
   justify-content: center;
+  margin-bottom: 25px;
+  overflow: hidden;
 }
 
 .character-img {
-  width: 120px;
-  padding-top: 180px;
+  width: 100px;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
 }
 
 .movie-characters p {
   color: rgba(35, 35, 35, 1);
   font-family: 'Helvetica';
-  font-size: 14px;
-  font-weight: bold;
-  position: relative;
-  top: -10px;
 }
 
 
-.movie-details .movie-info {
-  background: rgb(253, 254, 255);
-  width: 200px;
-  margin-left: 50px;
-  line-height: 5px;
-  border-radius: 8px;
-  height: 235px;
-  position: relative;
-  top: -20px;
+.character-specifications {
+  width: 150px;
+  justify-content: center;
+  padding-left: 6px;
+  padding-right: 4px;
+}
 
+.movie-info-and-characters {
+  background-color: rgb(243, 247, 250);
+}
+
+.title-wrapper {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.name {
+  color: rgba(35, 35, 35, 1);
+  font-family: 'Helvetica';
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.character-specifications span {
+  color: rgba(35, 35, 35, 1);
+  font-family: 'Helvetica';
+  font-size: 11px;
+  position: relative;
+  left: 10px;
+  right: 15px;
+  top: -10px;
+
+}
+
+.character-specifications .general-category {
+  font-weight: bolder;
+}
+
+
+/* Sección aside información general */
+
+
+.movie-details .movie-info {
+  width: 740px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .movie-details .general {
   font-family: 'Helvetica';
   font-size: 14px;
   font-weight: bold;
-  margin-left: 25px;
-  padding-top: 15px;
 }
 
 .movie-details .specific {
   font-family: 'Helvetica';
-  font-size: 12px;
-  margin-left: 25px;
+  font-size: 14px;
+}
+
+.date-section {
+  background-color: rgb(253, 254, 255);
+  border-radius: 8px;
+  height: 27px;
+  width: 140px;
+  text-align: center;
+  padding-top: 5px; 
+}
+
+.director-section {
+  background-color: rgb(253, 254, 255);
+  border-radius: 8px;
+  height: 27px;
+  width: 180px;
+  text-align: center;
+  padding-top: 5px; 
+}
+
+.producer-section {
+  background-color: rgb(253, 254, 255);
+  border-radius: 8px;
+  height: 27px;
+  width: 180px;
+  text-align: center;
+  padding-top: 5px; 
+}
+
+.rotten-section {
+  background-color: rgb(253, 254, 255);
+  border-radius: 8px;
+  height: 27px;
+  width: 200px;
+  text-align: center;
+  padding-top: 5px; 
 }
 
 
-body {
-  background-color: black;
+/* Sección locaciones */
+
+.movie-details .movie-locations {
+  background-color: rgb(243, 247, 250);
+}
+
+.locations-wrapper {
+  text-align: center;
+  font-family: 'Helvetica';
+}
+
+.flexbox-container-locations {
+  padding-left: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 265px);
+}
+
+.each-location {
+  width: 240px;
+  height: 160px;
   display: flex;
+  background-color: rgb(253, 254, 255);
+  border-radius: 8px;
   justify-content: center;
-  margin: 0 auto;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.location-name {
+  color: rgba(35, 35, 35, 1);
+  font-family: 'Helvetica';
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.location-img {
+  width: 100px;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
 }
