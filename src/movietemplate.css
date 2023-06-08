@@ -8,8 +8,6 @@ p1 {
 }
 
 
-
-
 .movie-info-and-characters {
   display: flex;
 
@@ -86,7 +84,12 @@ p2 {
 .movie-details .movie-characters {
   background-color: rgb(243, 247, 250);
   display: grid;
+  text-align: center;
 
+}
+
+.subtitle-characters {
+  position: center;
 }
 
 .movie-characters .each-character {
@@ -97,11 +100,9 @@ p2 {
   justify-content: center;
 }
 
-.character {
+.character-img {
   width: 120px;
   padding-top: 180px;
-  
-
 }
 
 .movie-characters p {
@@ -110,7 +111,7 @@ p2 {
   font-size: 14px;
   font-weight: bold;
   position: relative;
-  top: 10px;
+  top: -10px;
 }
 
 
