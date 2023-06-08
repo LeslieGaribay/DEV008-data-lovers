@@ -191,12 +191,14 @@ main {
 .flexbox-item1 {
     background: rgba(253, 254, 255, 1);
     margin-right: 21px;
+    height: auto;
+    padding-bottom: 30px;
 }
 
 .filter-box {
     border-radius: 10px;
     width: 260px;
-    height: 1050px;
+    height: fit-content;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -204,8 +206,8 @@ main {
 
 /* Inicio de contenido aside (botones que filtran peliculas)*/
 .flexbox-filter-list {
-    width: 216PX;
-    height: 400px;
+    width: 220PX;
+    height: auto;
     margin-top: 32px;
     margin-left: 20px;
 }
@@ -214,6 +216,10 @@ p2 {
     color: rgba(35, 35, 35, 1);
     font-weight: 900;
     font-size: 32px;
+}
+
+.filter-list {
+    height: auto;
 }
 
 .filter-list-button {
@@ -432,18 +438,18 @@ p4 {
 
     .flexbox-item1 {
         margin-right: 10px;
+        padding-bottom: 20px;
+        height: 900px;
     }
 
     /* aside */
     .filter-box {
         border-radius: 7px;
         width: 177px;
-        height: 840px;
     }
 
     .flexbox-filter-list {
         width: auto;
-        height: auto;
         margin-top: 15px;
         margin-left: 15px;
     }
@@ -551,7 +557,7 @@ p4 {
 
     .header-title-flexbox {
         width: 370px;
-        
+
     }
 
     .logo-ghiblipedia-index {
@@ -756,6 +762,7 @@ p4 {
         padding-top: 10rem;
     }
 }
+
 /* */
 /* */
 /* */
