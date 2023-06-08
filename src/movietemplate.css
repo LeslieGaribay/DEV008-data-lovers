@@ -33,12 +33,12 @@ p6 {
 
 
 .movie-details {
-  max-width: 850px;
+  max-width: 1000px;
   border-radius: 20px;
   flex-direction: column;
   box-sizing: content-box;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .movie-details .movie-generals {
@@ -106,7 +106,7 @@ p6 {
 }
 
 .flexbox-container-character {
-  padding-left: 40px;
+  padding-left: 110px;
   display: grid;
   grid-template-columns: repeat(3, 265px);
 }
@@ -118,7 +118,7 @@ p6 {
   background-color: rgb(253, 254, 255);
   border-radius: 8px;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   overflow: hidden;
 }
 
@@ -167,7 +167,6 @@ p6 {
   left: 10px;
   right: 15px;
   top: -10px;
-
 }
 
 .character-specifications .general-category {
@@ -180,7 +179,7 @@ p6 {
 
 .movie-details .movie-info {
   width: 740px;
-  margin-left: 50px;
+  margin-left: 135px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -242,10 +241,11 @@ p6 {
 .locations-wrapper {
   text-align: center;
   font-family: 'Helvetica';
+  padding-top: 10px;
 }
 
 .flexbox-container-locations {
-  padding-left: 40px;
+  padding-left: 110px;
   display: grid;
   grid-template-columns: repeat(3, 265px);
 }
@@ -274,4 +274,62 @@ p6 {
   height: 100%;
   position: relative;
   object-fit: cover;
+}
+
+/* Sección vehículos */
+
+.movie-details .movie-vehicles {
+  background-color: rgb(243, 247, 250);
+}
+
+.vehicles-wrapper {
+  text-align: center;
+  font-family: 'Helvetica';
+  padding-top: 10px;
+}
+
+.flexbox-container-vehicles {
+  padding-left: 110px;
+  display: grid;
+  grid-template-columns: repeat(3, 265px);
+}
+
+.each-vehicle {
+  width: 270px;
+  height: 160px;
+  display: flex;
+  background-color: rgb(253, 254, 255);
+  border-radius: 8px;
+  justify-content: center;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.vehicle-name {
+  color: rgba(35, 35, 35, 1);
+  font-family: 'Helvetica';
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.vehicle-img {
+  width: 100px;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.vehicle-specifications span {
+  color: rgba(35, 35, 35, 1);
+  font-family: 'Helvetica';
+  font-size: 11px;
+  position: relative;
+  left: 10px;
+  right: 15px;
+  top: -10px;
+}
+
+.vehicle-specifications .general-category {
+  font-weight: bolder;
 }
