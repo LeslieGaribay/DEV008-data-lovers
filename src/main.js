@@ -1,7 +1,6 @@
 // en este import data.js se traen las funciones filterdata / sortdata / computestats
 import data from './data/ghibli/ghibli.js'; // lo que nos trae la base de datos GHIBLI
-import { FilterAndSortMovies } from './data.js'
-
+import { FilterAndSortMovies, FilterData } from './data.js'
 
 // let movieTitlesFromDataBase = data.films.map(film => film.title);
 // const movieLibrary = document.getElementById('movie-library');
@@ -56,7 +55,14 @@ function addFilmsToLibrary(films) {// Para el boton de busqueda
 
 
 const filterButtons = document.querySelectorAll(".filter-list .sub-filter-list-button")
-filterButtons.forEach(filterButton => filterButton.addEventListener("click", FilterMoviesWrapper))
+filterButtons.forEach(filterButton => {
+  const filtered = FilterData(data.films, filterButton.dataset.property, filterButton.dataset.value)
+  const counter = document.createElement('span')
+  counter.innerText = ` (${filtered.length}) `
+  filterButton.appendChild(counter)
+  filterButton.addEventListener("click", FilterMoviesWrapper)
+})
+
 
 function highlightButton (buttooooon) {
   const filterButtons = document.querySelectorAll(".filter-list .sub-filter-list-button")
@@ -77,26 +83,31 @@ function FilterMoviesWrapper (event) {
 }
 
 
-
-const searchButton = document.getElementById("search-button");
-searchButton.addEventListener("click", SearchMovies);
 const searchInput = document.getElementById("searchBar");
 searchInput.addEventListener("input", SearchMovies);
 
 
+const MovieNotFoundTemplate = document.createElement("div")
+MovieNotFoundTemplate.classList.add("movie-not-found-container")
+const MovieNotFoundText = document.createElement("p")
+MovieNotFoundText.innerText = "No match found"
+MovieNotFoundText.classList.add("movie-not-found")
+MovieNotFoundTemplate.appendChild(MovieNotFoundText)
+
 function SearchMovies() {
-
   movieSection.innerHTML = "";
-
   // Agregar código para traer el input text, y sacar el texto de búsqueda
   const searchBarValue = document.getElementById("searchBar").value;
-
-  let filteredMovies = null;
-
   // Agregar código para filtrar por título (solo por mientras, luego por más propiedades)
-  filteredMovies = data.films.filter(film => film["title"].toLowerCase().includes(searchBarValue.toLowerCase()));
-
-  addFilmsToLibrary(filteredMovies)
+  const filteredMovies = data.films.filter(film => film["title"].toLowerCase().includes(searchBarValue.toLowerCase()));
+  
+  if (filteredMovies.length === 0) {
+    movieSection.classList.remove("index-movies-library")
+    movieSection.appendChild(MovieNotFoundTemplate)
+  } else {
+    movieSection.classList.add("index-movies-library")
+    addFilmsToLibrary(filteredMovies)
+  }
 }
 
 
@@ -124,3 +135,4 @@ function SortByMoviesWrapper (event) {
   movieSection.innerHTML = "";
   addFilmsToLibrary(sortedMovies)
 }
+

@@ -1,23 +1,52 @@
-import { example, anotherExample } from '../src/data.js';
+import { FilterData, SortByMovies } from '../src/data.js';
 
+const filmsFake = [
+  {title:"a"},
+  {title:"b"},
+  {title:"c"},
+]
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('Tests para filterData', () => {
+  
+  it('es una funcion', () => {
+    expect(typeof FilterData).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('filtra por categorias', () => {
+    expect(FilterData(filmsFake, "title", "a")).toStrictEqual([{title:"a"}]);
+  });
+
+  it('si no encuentra categoria', () => {
+    expect(FilterData(filmsFake, "title", "d")).toStrictEqual([]);
+  });
+
+  it('si el valor no es un array', () => {
+    expect(() => { FilterData(10) }).toThrow('films is not an array');
+  });
+
+  it('si la propiedad no está presente', () => {
+    expect(() => { FilterData([], undefined) }).toThrow('filmProperty can not be undefined');
   });
 });
 
+const filmYears =[
+  { year: "2006" },
+  { year: "2003" },
+  { year: "2023" },
+]
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+describe('Tests para sortData', () => {
+
+  it('es una funcion', () => {
+    expect(typeof SortByMovies).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('ordena de forma ascendente', () => {
+    expect(SortByMovies(filmYears, "year", [1])).toStrictEqual([{year: '2003'},{year:'2006'},{year: '2023'}]);
   });
+
+  it('ordena de forma descendente', () => {
+    expect(SortByMovies(filmYears, "year", [-1])).toStrictEqual([{ year: '2023' }, { year: '2006' }, { year: '2003' }]);
+  });
+
 });

@@ -1,5 +1,6 @@
 body {
     background-color: rgb(243, 247, 250);
+    font-family: 'Helvetica', 'Arial';
     height: 100%;
     width: 100%;
     margin: 0%;
@@ -19,7 +20,7 @@ body {
 
 /* header */
 .header-title-flexbox {
-    width: 720px;
+    width: 860px;
     display: flex;
     align-items: center;
 }
@@ -31,9 +32,10 @@ body {
 
 h1 {
     margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     align-self: flex-end;
     width: 100%;
-    height: 88px;
+    height: auto;
     font-size: 90px;
     color: #FDFEFF;
 }
@@ -42,7 +44,6 @@ p1 {
     margin-top: 40px;
     width: 100%;
     height: 71px;
-    font-family: 'Helvetica';
     font-style: normal;
     font-size: 30px;
     text-align: center;
@@ -64,6 +65,7 @@ main {
 
 /* inicio de barra de busqueda celeste */
 .search-container {
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -71,7 +73,7 @@ main {
 }
 
 .search-bar-block {
-    background-color: rgb(50, 166, 202);
+    background-color: #39c;
     position: absolute;
     display: flex;
     align-items: center;
@@ -97,18 +99,22 @@ main {
     background-color: transparent;
     border: none;
     margin-left: 10px;
+    width: 50px;
 }
 
 /* fin de barra de busqueda celeste */
 
 /* inicio de sort by desplegable*/
-#sort-by-button {
+#sort-section {
     top: 100px;
     justify-content: right;
     padding-right: 0px;
     position: relative;
     display: flex;
     width: 1432px;
+}
+
+#sort-by-button {
     height: 60px;
 }
 
@@ -120,6 +126,8 @@ main {
 .svg {
     color: rgba(35, 35, 35, 1);
     transform: rotate(90deg);
+    width: 20px;
+    height: 20px;
 }
 
 .sort-by-option {
@@ -127,7 +135,7 @@ main {
     height: 40px;
     width: auto;
     padding-top: 20px;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
     padding-left: 40px;
 }
 
@@ -141,10 +149,11 @@ main {
     display: none;
     background: rgba(235, 235, 235, 1);
     position: absolute;
+    right: 30px;
     top: 65%;
     width: 300px;
-    height: 450px;
-    padding: 0;
+    height: auto;
+    padding: 0px;
 }
 
 #sort-by-button:hover .options-to-click-sort-by {
@@ -165,7 +174,6 @@ main {
 }
 
 #sort-by-button li {
-    font-family: 'Helvetica';
     font-size: 23px;
 }
 
@@ -183,12 +191,14 @@ main {
 .flexbox-item1 {
     background: rgba(253, 254, 255, 1);
     margin-right: 21px;
+    height: auto;
+    padding-bottom: 30px;
 }
 
 .filter-box {
     border-radius: 10px;
     width: 260px;
-    height: 1050px;
+    height: fit-content;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -196,8 +206,8 @@ main {
 
 /* Inicio de contenido aside (botones que filtran peliculas)*/
 .flexbox-filter-list {
-    width: 216PX;
-    height: 400px;
+    width: 220PX;
+    height: auto;
     margin-top: 32px;
     margin-left: 20px;
 }
@@ -205,23 +215,17 @@ main {
 p2 {
     color: rgba(35, 35, 35, 1);
     font-weight: 900;
-    font-family: 'Helvetica';
     font-size: 32px;
 }
 
-p5 {
-    border: none;
-    background-color: rgba(253, 254, 255, 1);
-    font-size: 24px;
-    margin-top: 36px;
-    line-height: 1.5;
-    text-align: left;
-    font-family: 'Helvetica';
+.filter-list {
+    height: auto;
 }
 
 .filter-list-button {
     border: none;
     background-color: rgba(253, 254, 255, 1);
+    text-decoration-line: underline;
     font-size: 24px;
     margin-top: 36px;
     text-align: left;
@@ -249,6 +253,7 @@ p5 {
     background: rgba(253, 254, 255, 1);
     margin-left: 21px;
     border-radius: 10px;
+    min-width: 1120px;
 }
 
 .index-movies-library {
@@ -283,7 +288,6 @@ p5 {
 }
 
 p3 {
-    font-family: 'Helvetica';
     font-size: 26px;
 }
 
@@ -316,11 +320,680 @@ footer {
 p4 {
     color: rgb(107, 106, 106);
     font-size: 16px;
-    font-family: 'Helvetica';
+}
+
+.movie-not-found {
+    font-size: 35px;
+    font-weight: 600px;
+    color: #a1a1a1;
+}
+
+.movie-not-found-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10rem;
 }
 
 /*end Footer*/
 
 .jhgjhghfhghjgjhgjhg {
-    color:#39c;
+    color: #39c;
+}
+
+@media (max-width: 1500px) {
+    .index-header {
+        height: 432px;
+    }
+
+    .header-title-flexbox {
+        width: 619px;
+    }
+
+    .logo-ghiblipedia-index {
+        width: 154px;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 60px;
+    }
+
+    p1 {
+        margin-top: 30px;
+        height: 51px;
+        font-size: 20px;
+    }
+
+    /* searchbar */
+    .search-container {
+        width: 870px;
+    }
+
+    .search-bar-block {
+        width: 100%;
+        height: 80px;
+        border-radius: 7px;
+    }
+
+    .input-search-movie {
+        border-radius: 5px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 20px;
+        width: 500px;
+        height: 46px;
+        font-size: 20px;
+    }
+
+    #search-button {
+        margin-left: 10px;
+        width: 40px;
+    }
+
+    /* sort */
+    #sort-section {
+        top: 30px;
+        padding-right: 10px;
+        width: 870px;
+    }
+
+    #sort-by-button {
+        width: auto;
+        height: 60px;
+    }
+
+    .sortby-text {
+        padding-right: 0;
+    }
+
+    .svg {
+        padding: auto;
+        width: 15px;
+    }
+
+    .sort-by-option {
+        height: 20px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 40px;
+    }
+
+    .options-to-click-sort-by {
+        top: 55%;
+        width: 250px;
+        height: auto;
+        padding: 0px;
+        right: 10px;
+    }
+
+    #sort-by-button li {
+        font-size: 18px;
+    }
+
+    /* main */
+    .flexbox {
+        margin-top: 25px;
+    }
+
+    .flexbox-item1 {
+        margin-right: 10px;
+        padding-bottom: 20px;
+        height: 900px;
+    }
+
+    /* aside */
+    .filter-box {
+        border-radius: 7px;
+        width: 177px;
+    }
+
+    .flexbox-filter-list {
+        width: auto;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    p2 {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .filter-list-button {
+        font-size: 17px;
+        margin-top: 25px;
+    }
+
+    .sub-filter-list-button {
+        font-size: 15px;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+
+    /* section */
+    .flexbox-item2 {
+        display: flex;
+
+        margin-top: 70px;
+        margin-left: 10px;
+        border-radius: 7px;
+        min-width: 682px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .index-movies-library {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(4, 160px);
+        grid-template-rows: repeat(5, 300px);
+    }
+
+    .flexbox-container-library {
+        width: auto;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+    /* movie template*/
+    .each-movie-article {
+        height: 400px;
+        width: 135px;
+    }
+
+    .movie-poster {
+        width: 135px;
+        height: 196px;
+        border-radius: 7px;
+        margin-bottom: 19px;
+    }
+
+    p3 {
+        font-size: 16px;
+    }
+
+    /*Footer*/
+    footer {
+        height: 328px;
+    }
+
+    .footer-image {
+        padding-top: 100px;
+        width: 20%;
+    }
+
+    .footer-info-section {
+        height: 170px;
+    }
+
+    p4 {
+        font-size: 12px;
+    }
+
+    .movie-not-found {
+        font-size: 35px;
+        font-weight: 600px;
+        color: #a1a1a1;
+    }
+
+    .movie-not-found-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 10rem;
+    }
+}
+
+@media (max-width: 844px) {
+    .index-header {
+        height: 300px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-title-flexbox {
+        width: 370px;
+
+    }
+
+    .logo-ghiblipedia-index {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p1 {
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        height: 51px;
+        font-size: 18px;
+    }
+
+    /* searchbar */
+    .search-container {
+        width: 100%;
+    }
+
+    .search-bar-block {
+        width: 100%;
+        height: 50px;
+        border-radius: 0px;
+    }
+
+    .input-search-movie {
+        border-radius: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 20px;
+        width: 400px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    #search-button {
+        margin-left: 0px;
+        width: 30px;
+    }
+
+    /* sort */
+    #sort-section {
+        top: 0px;
+        padding-right: 10px;
+        width: 100%;
+        height: 34px;
+    }
+
+    #sort-by-button {
+        width: auto;
+        height: 60px;
+    }
+
+    .sortby-text {
+        padding-right: 0;
+        align-items: center;
+        display: flex;
+    }
+
+    .svg {
+        margin-left: 5px;
+        padding: auto;
+        width: 10px;
+    }
+
+    .sort-by-option {
+        height: 10px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .options-to-click-sort-by {
+        top: 80%;
+        width: 180px;
+        height: auto;
+        padding: 0px;
+        right: 10px;
+    }
+
+    #sort-by-button li {
+        font-size: 14px;
+    }
+
+    /* main */
+    .flexbox {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flexbox-item1 {
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    /* aside */
+    .filter-box {
+        border-radius: 5px;
+        width: 60%;
+        height: 230px;
+    }
+
+    .flexbox-filter-list {
+        width: auto;
+        height: auto;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    p2 {
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .filter-list-button {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .sub-filter-list-button {
+        font-size: 13px;
+        margin-top: 8px;
+        margin-left: 7px;
+    }
+
+    /* section */
+    .flexbox-item2 {
+        padding-top: 0px;
+        margin-left: 10px;
+        border-radius: 7px;
+        min-width: 682px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .index-movies-library {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(4, 160px);
+        grid-template-rows: repeat(5, 300px);
+    }
+
+    .flexbox-container-library {
+        width: auto;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+    /* movie template*/
+    .each-movie-article {
+        height: 400px;
+        width: 135px;
+    }
+
+    .movie-poster {
+        width: 135px;
+        height: 196px;
+        border-radius: 7px;
+        margin-bottom: 19px;
+    }
+
+    p3 {
+        font-size: 16px;
+    }
+
+    /*Footer*/
+    footer {
+        height: 228px;
+    }
+
+    .footer-image {
+        padding-top: 100px;
+        width: 20%;
+    }
+
+    .footer-info-section {
+        height: 90px;
+    }
+
+    p4 {
+        font-size: 11px;
+    }
+
+    .movie-not-found {
+        font-size: 35px;
+        font-weight: 600px;
+        color: #a1a1a1;
+    }
+
+    .movie-not-found-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 10rem;
+    }
+}
+
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+
+@media (max-width: 414px) {
+    .index-header {
+        height: 193px;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        justify-content: center;
+        position: relative;
+    }
+
+    .index-header p1 {
+        position: absolute;
+        background-color: #39c;
+        font-size: 14px;
+        bottom: 0;
+    }
+
+    .index-header h1 {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .header-title-flexbox {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+        margin-bottom: 51px;
+    }
+
+    .logo-ghiblipedia-index {
+        width: 80px;
+        align-self: center;
+    }
+
+    /* searchbar */
+    .search-container {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 193px;
+    }
+
+    .search-bar-block {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 133px;
+        border-radius: 10px;
+    }
+
+    .input-search-movie {
+        text-align: left;
+        border: none;
+        border-radius: 10px;
+        padding-top: 37px;
+        width: 700px;
+        height: 68px;
+        font-size: 25px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+    }
+
+    #search-button {
+        background-color: transparent;
+        border: none;
+        margin-left: 10px;
+        width: 50px;
+    }
+
+    /* sort */
+    #sort-section {
+        top: 30px;
+        padding-right: 10px;
+        width: 870px;
+    }
+
+    #sort-by-button {
+        width: auto;
+        height: 60px;
+    }
+
+    .sortby-text {
+        padding-right: 0;
+    }
+
+    .svg {
+        padding: auto;
+        width: 15px;
+    }
+
+    .sort-by-option {
+        height: 20px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 40px;
+    }
+
+    .options-to-click-sort-by {
+        top: 55%;
+        width: 250px;
+        height: auto;
+        padding: 0px;
+        right: 10px;
+    }
+
+    #sort-by-button li {
+        font-size: 18px;
+    }
+
+    /* main */
+    .flexbox {
+        margin-top: 25px;
+    }
+
+    .flexbox-item1 {
+        margin-right: 10px;
+    }
+
+    /* aside */
+    .filter-box {
+        border-radius: 7px;
+        width: 177px;
+        height: 840px;
+    }
+
+    .flexbox-filter-list {
+        width: auto;
+        height: auto;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    p2 {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .filter-list-button {
+        font-size: 17px;
+        margin-top: 25px;
+    }
+
+    .sub-filter-list-button {
+        font-size: 15px;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+
+    /* section */
+    .flexbox-item2 {
+        padding-top: 0px;
+        margin-left: 10px;
+        border-radius: 7px;
+        min-width: 0;
+        height: auto;
+        justify-content: center;
+    }
+
+    .index-movies-library {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 160px);
+        grid-template-rows: repeat(5, 300px);
+    }
+
+    .flexbox-container-library {
+        width: auto;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+    /* movie template*/
+    .each-movie-article {
+        height: 400px;
+        width: 135px;
+    }
+
+    .movie-poster {
+        width: 135px;
+        height: 196px;
+        border-radius: 7px;
+        margin-bottom: 19px;
+    }
+
+    p3 {
+        font-size: 16px;
+    }
+
+    /*Footer*/
+    footer {
+        height: 328px;
+    }
+
+    .footer-image {
+        padding-top: 100px;
+        width: 20%;
+    }
+
+    .footer-info-section {
+        height: 170px;
+    }
+
+    p4 {
+        font-size: 12px;
+    }
+
+    .movie-not-found {
+        font-size: 35px;
+        font-weight: 600px;
+        color: #a1a1a1;
+    }
+
+    .movie-not-found-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 10rem;
+    }
 }
