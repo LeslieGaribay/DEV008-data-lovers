@@ -2,6 +2,8 @@ import data from './data/ghibli/ghibli.js';
 
 const characterTemplate = document.getElementById("character-template");
 const characterSection = document.querySelector(".flexbox-container-character");
+const locationTemplate = document.getElementById("location-template");
+const locationSection = document.querySelector(".flexbox-container-locations");
 
 
 // 🚧🚧🚧 Este bloque es únicamente con fines de prueba 🚧🚧🚧
@@ -38,3 +40,32 @@ function addCharacterToLibrary(characterList) {
 
     }
 }
+
+// const locationList = data.films[0].locations;
+// addLocationToLibrary = (locationList);
+
+
+// function addLocationToLibrary (locationList) {
+//     for (let locationIndex = 0; locationIndex < locationList.length; locationIndex++) {
+//         const location = locationList[locationIndex];
+
+//         const locationTemplateClone = locationTemplate.content.cloneNode(true);
+//         const locationName = locationTemplateClone.querySelector(".location-name")
+//         const locationImg = locationTemplateClone.querySelector(".location-img")
+//         const locationClimate = locationTemplateClone.querySelector(".climate");
+//         const locationTerrain = locationTemplateClone.querySelector(".terrain");
+//         const locationSurface = locationTemplateClone.querySelector(".surface-water");
+//         const locationResidents = locationTemplateClone.querySelector(".residents");
+
+//         locationName.innerText = location.name;
+//         locationImg.src = location.img;
+//         locationClimate.innerText = location.climate;
+//         locationTerrain.innerText = location.terrain;
+//         locationSurface.innerText = location.surface_water;
+//         locationResidents.innerText = location.residents;
+
+//         locationSection.appendChild(locationTemplateClone);
+
+//     }
+// }
+

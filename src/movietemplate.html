@@ -11,29 +11,37 @@
 
     <div class="movie-details">
       <div class="second_image">
-        <img src="https://wallpaperaccess.com/full/8105917.jpg">
+        <img src="https://wallpaperaccess.com/full/125877.jpg">
       </div>
       <section class="movie-generals">
         <div class="movie-screenshot">
-          <img class="movie-poster" src="https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Pom_Poko.jpg">
+          <img class="movie-poster" src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg">
         </div>
         <div class="movie-title-and-description">
-          <div class="movie-title">Pom Poko</div>
-          <div class="movie-description">As the human city development encroaches on the raccoon population's forest and meadow habitat, the raccoons find themselves faced with the very real possibility of extinction. In response, the raccoons engage in a desperate struggle to stop the construction and preserve their home.
-        </div>
+          <div class="movie-title">Castle in the Sky</div>
+          <div class="movie-description">The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.
+          </div>
       </section>
 
     <div class="movie-info-and-characters">
-      <aside class="movie-info">
-        <p class="general">Release date</p>
-        <p class="specific">1994</p>
-        <p class="general">Director</p>
-        <p class="specific" data-property="director" data-value="Isao Takahata">Isao Takahata</p>
-        <p class="general">Producer</p>
-        <p class="specific" data-property="director">Toshio Suzuki</p>
-        <p class="general">Rotten Tomatoes Score</p>
-        <p class="specific">78</p>
-      </aside>
+      <div class="movie-info">
+        <div class="date-section">
+          <span class="general">Release date:</span>
+          <span class="specific">1986</span>
+        </div>
+        <div class="director-section">
+          <span class="general">Director:</span>
+          <span class="specific" data-property="director" data-value="Hayao Miyazaki">Hayao Miyazaki</span>
+        </div>
+        <div class="producer-section">
+          <span class="general">Producer:</span>
+          <span class="specific" data-property="producer" data-value="Isao Takahata">Isao Takahata</span>
+        </div>
+        <div class="rotten-section">
+          <span class="general">Rotten Tomatoes Score:</span>
+          <span class="specific">95</span>
+        </div>
+      </div>
       <section class="movie-characters">
         <div class="title-wrapper"><p6>Characters</p6></div>
         <div class="flexbox-container-character">
@@ -68,8 +76,41 @@
             </article>
           </template>
         </div>
+      </section>
+    </div>
+
+    <section class="movie-locations">
+      <div class="locations-wrapper"><p6>Locations</p6></div>
+        <div class="flexbox-container-locations">
+          <div id="location-template">
+            <article class="each-location">
+              <div class="location-image">
+                <img class="location-img" src="https://static.wikia.nocookie.net/studio-ghibli/images/2/25/Thumbnail-8.jpeg" alt="location-castle">
+              </div>
+              <div class="character-specifications">
+                <p class="location-name">Gondoa</p>
+                <div class="climate-section">
+                  <span class="general-category">Climate:</span>
+                  <span class="climate">Continental</span>
+                </div>
+                <div class="terrain-section">
+                  <span class="general-category">Terrain:</span>
+                  <span class="terrain">Plain</span>
+                </div>
+                <div class="surface-section">
+                  <span class="general-category">Surface water:</span>
+                  <span class="surface-water">30</span>
+                </div>
+                <div class="residents-section">
+                  <span class="general-category">Residents:</span>
+                  <span class="residents">Does not apply</span>
+                </div>
+              </div>
+            </div>
+          </div> <!-- template -->
+        </div>
+      </div>
     </section>
-  </div>
 
   <script src="movietemplate.js" type="module"></script>
 </body>
