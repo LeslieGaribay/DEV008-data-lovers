@@ -25,7 +25,7 @@ describe('Tests para filterData', () => {
   });
 
   it('si la propiedad no está presente', () => {
-    expect(() => { FilterData([], undefined) }).toThrow('filmProperty can not be undefined');
+    expect(() => { FilterData(filmsFake, undefined) }).toThrow('filmProperty can not be undefined');
   });
 });
 
@@ -49,4 +49,11 @@ describe('Tests para sortData', () => {
     expect(SortByMovies(filmYears, "year", [-1])).toStrictEqual([{ year: '2023' }, { year: '2006' }, { year: '2003' }]);
   });
 
+  it('si el valor no es un array', () => {
+    expect(() => { SortByMovies(1) }).toThrow('films is not an array');
+  });
+
+  it('si la propiedad no está presente', () => {
+    expect(() => { SortByMovies(filmYears, undefined) }).toThrow('sortByProperty can not be undefined');
+  });
 });

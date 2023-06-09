@@ -16,8 +16,15 @@ export function FilterData(films, filmProperty, filmPropertyValue) {
 
 //sortData(data, sortBy, sortOrder=[1,-1])
 export function SortByMovies(films, sortByProperty, sortOrder) {
-  let sortedMovies = [];
+  if (!Array.isArray(films)) {
+    throw new TypeError('films is not an array')
+  }
+  
+  if (!sortByProperty) {
+    throw new TypeError('sortByProperty can not be undefined')
+  }
 
+  let sortedMovies = [];
   sortedMovies = films.sort((a, b) => {
     if (a[sortByProperty] > b[sortByProperty]) {
       return 1 * sortOrder;
