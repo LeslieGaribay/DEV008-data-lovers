@@ -9,20 +9,19 @@
 
 <body>
 
-    <div class="movie-details">
-      <div class="second_image">
-        <img src="https://wallpaperaccess.com/full/125877.jpg">
+  <div class="movie-details">
+    <div class="second_image">
+      <img src="https://wallpaperaccess.com/full/125877.jpg">
+    </div>
+    <section class="movie-generals">
+      <div class="movie-screenshot">
+        <img class="movie-poster" src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg">
       </div>
-      <section class="movie-generals">
-        <div class="movie-screenshot">
-          <img class="movie-poster" src="https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg">
+      <div class="movie-title-and-description">
+        <div class="movie-title">Castle in the Sky</div>
+        <div class="movie-description">The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.
         </div>
-        <div class="movie-title-and-description">
-          <div class="movie-title">Castle in the Sky</div>
-          <div class="movie-description">The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.
-          </div>
-      </section>
-
+    </section>
     <div class="movie-info-and-characters">
       <div class="movie-info">
         <div class="date-section">
@@ -42,6 +41,7 @@
           <span class="specific">95</span>
         </div>
       </div>
+
       <section class="movie-characters">
         <div class="title-wrapper"><p6>Characters</p6></div>
         <div class="flexbox-container-character">
@@ -77,10 +77,9 @@
           </template>
         </div>
       </section>
-    </div>
 
-    <section class="movie-locations">
-      <div class="locations-wrapper"><p6>Locations</p6></div>
+      <section class="movie-locations">
+        <div class="locations-wrapper"><p6>Locations</p6></div>
         <div class="flexbox-container-locations">
           <div id="location-template">
             <article class="each-location">
@@ -106,11 +105,49 @@
                   <span class="residents">Does not apply</span>
                 </div>
               </div>
-            </div>
+            </article> 
           </div> <!-- template -->
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="movie-vehicles">
+        <div class="vehicles-wrapper">
+          <p6>Vehicles</p6>
+        </div>
+        <div class="flexbox-container-vehicles">
+          <div id="vehicles-template">
+            <article class="each-vehicle">
+              <div class="vehicle-image">
+                <img class="vehicle-img" src="https://static.wikia.nocookie.net/studio-ghibli/images/e/e5/Goliath.png"
+                alt="vehicle-castle">
+              </div>
+              <div class="vehicle-specifications">
+                <p class="vehicle-name">Air Destroyer Goliath</p>
+                <div class="description-section">
+                  <span class="general-category">Description:</span>
+                  <span class="description">A military airship utilized by the government to access Laputa</span>
+                </div>
+                <div class="vehicle_class-section">
+                  <span class="general-category">Vehicle class:</span>
+                  <span class="vehicle_class">Airship</span>
+                </div>
+                <div class="length-section">
+                  <span class="general-category">Length:</span>
+                  <span class="length">1,000</span>
+                </div>
+                <div class="pilot-section">
+                  <span class="general-category">Pilot:</span>
+                  <span class="pilot">Colonel Muska</span>
+                </div>
+              </div>
+              </article>
+          </div> <!-- template -->
+        </div> 
+      </section>
+
+    </div>
+
+  </div>
 
   <script src="movietemplate.js" type="module"></script>
 </body>

@@ -322,6 +322,10 @@ p4 {
     font-size: 16px;
 }
 
+a {
+    color: #39c;
+}
+
 .movie-not-found {
     font-size: 35px;
     font-weight: 600px;
@@ -773,34 +777,85 @@ p4 {
 /* */
 /* */
 
-@media (max-width: 414px) {
+
+
+@media (max-width: 480px) {
+
+    body {
+        background-color: rgb(243, 247, 250);
+        font-family: 'Helvetica', 'Arial';
+        height: 100%;
+        width: 100%;
+        margin: 0%;
+      }
+
     .index-header {
-        height: 193px;
+        height: 300px;
+        width: 100%;
+        align-items: center;
         display: flex;
         flex-direction: column;
         background-color: black;
         justify-content: center;
         position: relative;
+        background-size: cover;
+        background-position: center;
     }
 
-    .index-header p1 {
-        position: absolute;
-        background-color: #39c;
-        font-size: 14px;
-        bottom: 0;
-    }
-
-    .index-header h1 {
+    p1 {
+        margin-top: 20px;
         width: 100%;
-        font-size: 25px;
+        font-style: normal;
+        font-size: 15px;
+        text-align: center;
+        color: #FDFEFF;
     }
+
+    h1 {
+        margin: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        align-self: center;
+        width: 100%;
+        font-size: 30px;
+        color: #FDFEFF;
+    }
+
+    .search-container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: -30px;
+    }
+
+    .search-bar-block {
+        background-color: #39c;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 60px;
+        border-radius: 10px;
+      }
+
+      .input-search-movie {
+        text-align: left;
+        border: none;
+        border-radius: 10px;
+        padding-top: 10px;
+        width: 180px;
+        height: 30px;
+        font-size: 14px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
 
     .header-title-flexbox {
         display: flex;
         flex-direction: column;
         width: auto;
         justify-content: center;
-        margin-bottom: 51px;
     }
 
     .logo-ghiblipedia-index {
@@ -808,57 +863,31 @@ p4 {
         align-self: center;
     }
 
-    /* searchbar */
-    .search-container {
-        width: 100%;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        top: 193px;
-    }
-
-    .search-bar-block {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 133px;
-        border-radius: 10px;
-    }
-
-    .input-search-movie {
-        text-align: left;
-        border: none;
-        border-radius: 10px;
-        padding-top: 37px;
-        width: 700px;
-        height: 68px;
-        font-size: 25px;
-        padding-bottom: 40px;
-        padding-left: 30px;
-    }
-
     #search-button {
         background-color: transparent;
         border: none;
         margin-left: 10px;
-        width: 50px;
-    }
+        width: 30px;
+      }
 
     /* sort */
     #sort-section {
-        top: 30px;
-        padding-right: 10px;
-        width: 870px;
-    }
+        top: 40px;
+        justify-content: flex-end;
+        padding-right: 20px;
+        position: relative;
+        display: flex;
+        width: 100%;
+      }
 
     #sort-by-button {
         width: auto;
-        height: 60px;
+        height: 40px;
     }
 
     .sortby-text {
         padding-right: 0;
+        font-size: 10px;
     }
 
     .svg {
@@ -867,11 +896,13 @@ p4 {
     }
 
     .sort-by-option {
-        height: 20px;
-        padding-top: 13px;
-        padding-bottom: 13px;
-        padding-left: 40px;
-    }
+        color: rgba(35, 35, 35, 1);
+        height: 30px;
+        width: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+      }
 
     .options-to-click-sort-by {
         top: 55%;
@@ -882,111 +913,142 @@ p4 {
     }
 
     #sort-by-button li {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     /* main */
     .flexbox {
-        margin-top: 25px;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
     }
 
     .flexbox-item1 {
-        margin-right: 10px;
+        background: rgba(253, 254, 255, 1);
+        height: auto;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     /* aside */
     .filter-box {
-        border-radius: 7px;
-        width: 177px;
-        height: 840px;
-    }
+        border-radius: 10px;
+        width: 260px;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
     .flexbox-filter-list {
-        width: auto;
+        width: 220px;
         height: auto;
-        margin-top: 15px;
-        margin-left: 15px;
+        margin-top: 10px;
+        margin-left: 10px;
     }
 
     p2 {
-        font-weight: 700;
-        font-size: 24px;
+        color: rgba(35, 35, 35, 1);
+        font-weight: 900;
+        font-size: 15px;
     }
 
     .filter-list-button {
-        font-size: 17px;
-        margin-top: 25px;
+        border: none;
+        background-color: rgba(253, 254, 255, 1);
+        text-decoration-line: underline;
+        font-size: 11px;
+        margin-top: 10px;
+        text-align: left;
     }
 
     .sub-filter-list-button {
-        font-size: 15px;
-        margin-top: 25px;
-        margin-left: 10px;
-    }
+        border: none;
+        background-color: rgba(253, 254, 255, 1);
+        font-size: 10px;
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 14px;
+        flex-direction: row;
+        display: flex;
+      }
 
     /* section */
     .flexbox-item2 {
-        padding-top: 0px;
-        margin-left: 10px;
-        border-radius: 7px;
-        min-width: 0;
-        height: auto;
-        justify-content: center;
-    }
+        background: rgba(253, 254, 255, 1);
+        border-radius: 10px;
+        min-width: 394px;
+        max-width: 480px;
+        align-content: left;
 
+      }
+      
     .index-movies-library {
-        padding-top: 20px;
-        padding-bottom: 10px;
-        margin: 0px;
         display: grid;
-        grid-template-columns: repeat(2, 160px);
-        grid-template-rows: repeat(5, 300px);
+        grid-template-columns: repeat(2, 120px);
+        grid-gap: 20px;   
     }
 
-    .flexbox-container-library {
-        width: auto;
-        margin-left: 10px;
-        margin-top: 0px;
-    }
+    .flexbox-container-library {      
+        padding-bottom: 20px;   
+    }     
 
     /* movie template*/
     .each-movie-article {
-        height: 400px;
-        width: 135px;
-    }
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        margin-bottom: 8px;
+      }
 
     .movie-poster {
-        width: 135px;
-        height: 196px;
-        border-radius: 7px;
-        margin-bottom: 19px;
+        width: 100px;
+        height: 150px;
+        border-radius: 10px; 
+        margin-left: 18px;
+        object-fit: cover;
     }
 
     p3 {
-        font-size: 16px;
+        font-size: 11px;
     }
 
     /*Footer*/
     footer {
-        height: 328px;
-    }
+        height: 400px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+      }
 
     .footer-image {
-        padding-top: 100px;
-        width: 20%;
+        padding-top: 220px;
     }
 
     .footer-info-section {
-        height: 170px;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(228, 228, 228, 1);
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     p4 {
+        color: rgb(107, 106, 106);
         font-size: 12px;
     }
 
     .movie-not-found {
-        font-size: 35px;
-        font-weight: 600px;
+        font-size: 15px;
+        font-weight: 400px;
         color: #a1a1a1;
     }
 
@@ -994,6 +1056,6 @@ p4 {
         display: flex;
         width: 100%;
         justify-content: center;
-        padding-top: 10rem;
+        padding-top: 2px;
     }
 }

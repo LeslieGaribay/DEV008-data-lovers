@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color:  #39c;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -33,12 +33,12 @@ p6 {
 
 
 .movie-details {
-  max-width: 850px;
+  max-width: 1000px;
   border-radius: 20px;
   flex-direction: column;
   box-sizing: content-box;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .movie-details .movie-generals {
@@ -106,7 +106,7 @@ p6 {
 }
 
 .flexbox-container-character {
-  padding-left: 40px;
+  padding-left: 110px;
   display: grid;
   grid-template-columns: repeat(3, 265px);
 }
@@ -118,7 +118,7 @@ p6 {
   background-color: rgb(253, 254, 255);
   border-radius: 8px;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   overflow: hidden;
 }
 
@@ -167,7 +167,6 @@ p6 {
   left: 10px;
   right: 15px;
   top: -10px;
-
 }
 
 .character-specifications .general-category {
@@ -180,7 +179,7 @@ p6 {
 
 .movie-details .movie-info {
   width: 740px;
-  margin-left: 50px;
+  margin-left: 135px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -242,10 +241,11 @@ p6 {
 .locations-wrapper {
   text-align: center;
   font-family: 'Helvetica';
+  padding-top: 10px;
 }
 
 .flexbox-container-locations {
-  padding-left: 40px;
+  padding-left: 110px;
   display: grid;
   grid-template-columns: repeat(3, 265px);
 }
@@ -274,4 +274,305 @@ p6 {
   height: 100%;
   position: relative;
   object-fit: cover;
+}
+
+/* Sección vehículos */
+
+.movie-details .movie-vehicles {
+  background-color: rgb(243, 247, 250);
+}
+
+.vehicles-wrapper {
+  text-align: center;
+  font-family: 'Helvetica';
+  padding-top: 10px;
+}
+
+.flexbox-container-vehicles {
+  padding-left: 110px;
+  display: grid;
+  grid-template-columns: repeat(3, 265px);
+}
+
+.each-vehicle {
+  width: 270px;
+  height: 160px;
+  display: flex;
+  background-color: rgb(253, 254, 255);
+  border-radius: 8px;
+  justify-content: center;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.vehicle-name {
+  color: rgba(35, 35, 35, 1);
+  font-family: 'Helvetica';
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.vehicle-img {
+  width: 100px;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.vehicle-specifications span {
+  color: rgba(35, 35, 35, 1);
+  font-family: 'Helvetica';
+  font-size: 11px;
+  position: relative;
+  left: 10px;
+  right: 15px;
+  top: -10px;
+}
+
+.vehicle-specifications .general-category {
+  font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 414px) {
+  .index-header {
+      height: 193px;
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      justify-content: center;
+      position: relative;
+  }
+
+  .index-header p1 {
+      position: absolute;
+      background-color: #39c;
+      font-size: 14px;
+      bottom: 0;
+  }
+
+  .index-header h1 {
+      width: 100%;
+      font-size: 25px;
+  }
+
+  .header-title-flexbox {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      justify-content: center;
+      margin-bottom: 51px;
+  }
+
+  .logo-ghiblipedia-index {
+      width: 80px;
+      align-self: center;
+  }
+
+  /* searchbar */
+  .search-container {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 193px;
+  }
+
+  .search-bar-block {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 133px;
+      border-radius: 10px;
+  }
+
+  .input-search-movie {
+      text-align: left;
+      border: none;
+      border-radius: 10px;
+      padding-top: 37px;
+      width: 700px;
+      height: 68px;
+      font-size: 25px;
+      padding-bottom: 40px;
+      padding-left: 30px;
+  }
+
+  #search-button {
+      background-color: transparent;
+      border: none;
+      margin-left: 10px;
+      width: 50px;
+  }
+
+  /* sort */
+  #sort-section {
+      top: 30px;
+      padding-right: 10px;
+      width: 870px;
+  }
+
+  #sort-by-button {
+      width: auto;
+      height: 60px;
+  }
+
+  .sortby-text {
+      padding-right: 0;
+  }
+
+  .svg {
+      padding: auto;
+      width: 15px;
+  }
+
+  .sort-by-option {
+      height: 20px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-left: 40px;
+  }
+
+  .options-to-click-sort-by {
+      top: 55%;
+      width: 250px;
+      height: auto;
+      padding: 0px;
+      right: 10px;
+  }
+
+  #sort-by-button li {
+      font-size: 18px;
+  }
+
+  /* main */
+  .flexbox {
+      margin-top: 25px;
+  }
+
+  .flexbox-item1 {
+      margin-right: 10px;
+  }
+
+  /* aside */
+  .filter-box {
+      border-radius: 7px;
+      width: 177px;
+      height: 840px;
+  }
+
+  .flexbox-filter-list {
+      width: auto;
+      height: auto;
+      margin-top: 15px;
+      margin-left: 15px;
+  }
+
+  p2 {
+      font-weight: 700;
+      font-size: 24px;
+  }
+
+  .filter-list-button {
+      font-size: 17px;
+      margin-top: 25px;
+  }
+
+  .sub-filter-list-button {
+      font-size: 15px;
+      margin-top: 25px;
+      margin-left: 10px;
+  }
+
+  /* section */
+  .flexbox-item2 {
+      padding-top: 0px;
+      margin-left: 10px;
+      border-radius: 7px;
+      min-width: 0;
+      height: auto;
+      justify-content: center;
+  }
+
+  .index-movies-library {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      margin: 0px;
+      display: grid;
+      grid-template-columns: repeat(2, 160px);
+      grid-template-rows: repeat(5, 300px);
+  }
+
+  .flexbox-container-library {
+      width: auto;
+      margin-left: 10px;
+      margin-top: 0px;
+  }
+
+  /* movie template*/
+  .each-movie-article {
+      height: 400px;
+      width: 135px;
+  }
+
+  .movie-poster {
+      width: 135px;
+      height: 196px;
+      border-radius: 7px;
+      margin-bottom: 19px;
+  }
+
+  p3 {
+      font-size: 16px;
+  }
+
+  /*Footer*/
+  footer {
+      height: 328px;
+  }
+
+  .footer-image {
+      padding-top: 100px;
+      width: 20%;
+  }
+
+  .footer-info-section {
+      height: 170px;
+  }
+
+  p4 {
+      font-size: 12px;
+  }
+
+  .movie-not-found {
+      font-size: 35px;
+      font-weight: 600px;
+      color: #a1a1a1;
+  }
+
+  .movie-not-found-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding-top: 10rem;
+  }
 }
