@@ -874,7 +874,7 @@ a {
     #sort-section {
         top: 40px;
         justify-content: flex-end;
-        padding-right: 20px;
+        padding-right: 0px;
         position: relative;
         display: flex;
         width: 100%;
@@ -977,10 +977,8 @@ a {
     .flexbox-item2 {
         background: rgba(253, 254, 255, 1);
         border-radius: 10px;
-        min-width: 394px;
-        max-width: 480px;
-        align-content: left;
-
+        min-width: 200px;
+    
       }
       
     .index-movies-library {
@@ -990,7 +988,8 @@ a {
     }
 
     .flexbox-container-library {      
-        padding-bottom: 20px;   
+        padding-bottom: 20px; 
+        height: auto;  
     }     
 
     /* movie template*/
