@@ -45,12 +45,14 @@ const locationList = data.films[0].locations;
 addLocationToLibrary = (locationList);
 
 
+
+
 function addLocationToLibrary (locationList) {
     for (let locationIndex = 0; locationIndex < locationList.length; locationIndex++) {
         const location = locationList[locationIndex];
 
         const locationTemplateClone = locationTemplate.content.cloneNode(true);
-        const locationName = locationTemplateClone.querySelector(".location-name")
+        const locationName = locationTemplateClone.querySelector(".location-name");
         const locationImg = locationTemplateClone.querySelector(".location-img")
         const locationClimate = locationTemplateClone.querySelector(".climate");
         const locationTerrain = locationTemplateClone.querySelector(".terrain");
