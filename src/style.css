@@ -665,9 +665,12 @@ a {
 
     /* aside */
     .filter-box {
-        border-radius: 5px;
-        width: 60%;
-        height: 230px;
+        border-radius: 10px;
+        width: 35%;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .flexbox-filter-list {
@@ -685,12 +688,17 @@ a {
     .filter-list-button {
         font-size: 15px;
         margin-top: 10px;
+        text-align: left;
     }
 
     .sub-filter-list-button {
         font-size: 13px;
         margin-top: 8px;
         margin-left: 7px;
+        text-align: left;
+        margin-left: 14px;
+        flex-direction: row;
+        display: flex;
     }
 
     /* section */
@@ -706,7 +714,7 @@ a {
     .index-movies-library {
         padding-top: 20px;
         padding-bottom: 10px;
-        margin: 0px;
+        margin-top: 35px;
         display: grid;
         grid-template-columns: repeat(4, 160px);
         grid-template-rows: repeat(5, 300px);
@@ -873,26 +881,21 @@ a {
     /* sort */
     #sort-section {
         top: 40px;
-        justify-content: flex-end;
-        padding-right: 0px;
-        position: relative;
-        display: flex;
+        right: 20px;
         width: 100%;
       }
 
     #sort-by-button {
         width: auto;
-        height: 40px;
+        height: auto;
     }
 
     .sortby-text {
-        padding-right: 0;
         font-size: 10px;
     }
 
     .svg {
         padding: auto;
-        width: 15px;
     }
 
     .sort-by-option {
@@ -901,19 +904,17 @@ a {
         width: auto;
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 14px;
+        font-size: 11px;
       }
 
     .options-to-click-sort-by {
         top: 55%;
-        width: 250px;
+        width: 130px;
         height: auto;
-        padding: 0px;
-        right: 10px;
     }
 
     #sort-by-button li {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     /* main */
@@ -949,8 +950,8 @@ a {
 
     p2 {
         color: rgba(35, 35, 35, 1);
-        font-weight: 900;
-        font-size: 15px;
+        font-weight: 800;
+        font-size: 13px;
     }
 
     .filter-list-button {
@@ -977,41 +978,40 @@ a {
     .flexbox-item2 {
         background: rgba(253, 254, 255, 1);
         border-radius: 10px;
-        min-width: 200px;
+        min-width: 280px;
+        align-content: center;
     
       }
       
     .index-movies-library {
         display: grid;
         grid-template-columns: repeat(2, 120px);
-        grid-gap: 20px;   
+        grid-gap: 20px;
+        align-content: center;
+        grid-template-rows: auto 1fr;
     }
 
     .flexbox-container-library {      
-        padding-bottom: 20px; 
-        height: auto;  
+        padding-bottom: 30px; 
     }     
 
     /* movie template*/
     .each-movie-article {
-        height: auto;
+        height: 200px;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         display: flex;
-        margin-bottom: 8px;
       }
 
     .movie-poster {
         width: 100px;
-        height: 150px;
-        border-radius: 10px; 
-        margin-left: 18px;
-        object-fit: cover;
+        border-radius: 10px;         
     }
 
     p3 {
-        font-size: 11px;
+        font-size: 14px;
+        max-width: 100px;
     }
 
     /*Footer*/
