@@ -32,6 +32,7 @@ describe('Tests para filterData', () => {
 const filmYears =[
   { year: "2006" },
   { year: "2003" },
+  { year: "2006" },
   { year: "2023" },
 ]
 
@@ -42,11 +43,11 @@ describe('Tests para sortData', () => {
   });
 
   it('ordena de forma ascendente', () => {
-    expect(SortByMovies(filmYears, "year", [1])).toStrictEqual([{year: '2003'},{year:'2006'},{year: '2023'}]);
+    expect(SortByMovies(filmYears, "year", [1])).toStrictEqual([{year: '2003'},{year:'2006'},{year:'2006'},{year: '2023'}]);
   });
 
   it('ordena de forma descendente', () => {
-    expect(SortByMovies(filmYears, "year", [-1])).toStrictEqual([{ year: '2023' }, { year: '2006' }, { year: '2003' }]);
+    expect(SortByMovies(filmYears, "year", [-1])).toStrictEqual([{ year: '2023' }, { year: '2006' }, {year:'2006'}, { year: '2003' }]);
   });
 
   it('si el valor no es un array', () => {
