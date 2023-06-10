@@ -7,6 +7,10 @@ export function FilterData(films, filmProperty, filmPropertyValue) {
   if (!filmProperty) {
     throw new TypeError('filmProperty can not be undefined')
   }
+
+  if (!filmPropertyValue) {
+    throw new TypeError('filmPropertyValue can not be undefined')
+  }
  
   let filteredMovies = [];
   filteredMovies = films.filter(film => film[filmProperty] === filmPropertyValue);
@@ -40,6 +44,10 @@ export function SortByMovies(films, sortByProperty, sortOrder) {
 
 let filteredAndSortedMovies = []; // guardar estado 
 export function FilterAndSortMovies(films, filmProperty, filmPropertyValue, sortByProperty, sortOrder){
+  if (!Array.isArray(films)) {
+    throw new TypeError('films is not an array')
+  }
+
   if (filteredAndSortedMovies.length === 0){
     filteredAndSortedMovies = films;
   }
@@ -52,4 +60,8 @@ export function FilterAndSortMovies(films, filmProperty, filmPropertyValue, sort
     filteredAndSortedMovies = SortByMovies(filteredAndSortedMovies, sortByProperty, sortOrder);
   }
   return filteredAndSortedMovies;
+}
+
+export function resetFilteredAndSortedMovies() {
+  filteredAndSortedMovies = []
 }
