@@ -39,7 +39,10 @@ Para conocer las necesidades de nuestro público objetivo, elaboramos una encues
 
 * Si pudieras elegir dos palabras para describir a Studio Ghibli, ¿cuáles serían? 
 
-Al recibir las respuestas, nos dimos cuenta de que la mayor parte de nuestro público objetivo suele ver las películas de Studio Ghibli en su computadora de escritorio o laptop, por lo cual priorizamos el diseño de nuestra página para esta vista. Asimismo, nos basamos en las respuestas de la pregunta “Si pudieras elegir dos palabras para describir a Studio Ghibli, ¿cuáles serían?” para elegir el diseño principal y los colores de la página. 
+Al recibir las respuestas, nos dimos cuenta de que la mayor parte de nuestro público objetivo suele ver las películas de Studio Ghibli en su computadora de escritorio o laptop, por lo cual priorizamos el diseño de nuestra página para esta vista. Asimismo, nos basamos en las respuestas de la pregunta “Si pudieras elegir dos palabras para describir a Studio Ghibli, ¿cuáles serían?” para elegir el diseño principal y los colores de la página.
+
+![Alt text](<Formulario 1.PNG>)
+
 
 ## 3. Historias de usuario
 
@@ -193,7 +196,8 @@ Con base en los resultados de la encuesta realizada a nuestro público objetivo,
 
 ## 5. Pruebas unitarias
 
-Construimos las pruebas unitarias de las funciones, las cuales dieron una cobertura de 100% en sentencias, funciones y ramas. 
+Construimos las pruebas unitarias de las funciones, las cuales dieron una cobertura de 100% en sentencias, funciones y ramas.
+
 ![Alt text](<Test Ghiblipedia.PNG>)
 
 
