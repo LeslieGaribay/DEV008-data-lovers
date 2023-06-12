@@ -7,10 +7,9 @@
 * [3. Historias de usuario](#3-historias-de-usuario)
 * [4. Proceso de diseño de la interfaz de usuario](#4-proceso-de-diseño-de-la-interfaz-de-usuario)
 * [5. Pruebas unitarias](#5-pruebas-unitarias)
-* [6. Resultado de la interfaz](#6-resultado-de-la-interfaz)
-* [7. Estado del proyecto](#7-estado-del-proyecto)
-* [8. Fundamentos](#8-fundamentos)
-* [9. Autoras](#9-autoras)
+* [6. Estado del proyecto](#7-estado-del-proyecto)
+* [7. Fundamentos](#8-fundamentos)
+* [8. Autoras](#9-autoras)
 
 ***
 
@@ -39,18 +38,18 @@ Para conocer las necesidades de nuestro público objetivo, elaboramos una encues
 
 * Si pudieras elegir dos palabras para describir a Studio Ghibli, ¿cuáles serían? 
 
-Al recibir las respuestas, nos dimos cuenta de que la mayor parte de nuestro público objetivo suele ver las películas de Studio Ghibli en su computadora de escritorio o laptop, por lo cual priorizamos el diseño de nuestra página para esta vista. Asimismo, nos basamos en las respuestas de la pregunta “Si pudieras elegir dos palabras para describir a Studio Ghibli, ¿cuáles serían?” para elegir el diseño principal y los colores de la página.
+  Al recibir las respuestas, nos dimos cuenta de que la mayor parte de nuestro público objetivo suele ver las películas de Studio Ghibli en su computadora de escritorio o laptop, por lo cual priorizamos el diseño de nuestra página para esta vista. Asimismo, nos basamos en las respuestas de la pregunta “Si pudieras elegir dos palabras para describir a Studio Ghibli, ¿cuáles serían?” para elegir el diseño principal y los colores de la página.
 
-![Alt text](<Formulario 1.PNG>)
+  ![Alt text](<Formulario 1.PNG>)
 
-![Alt text](<Formulario 2.PNG>)
+  ![Alt text](<Formulario 2.PNG>)
 
-![Alt text](<Formulario 3.PNG>)
+  ![Alt text](<Formulario 3.PNG>)
 
 
 ## 3. Historias de usuario
 
-Con base en los resultados de la encuesta realizada a nuestro público objetivo, definimos seis historias de usuario que guiaron el diseño de nuestra página:
+  Con base en los resultados de la encuesta realizada a nuestro público objetivo, definimos seis historias de usuario que guiaron el diseño de nuestra página:
 
 ### Historia de Usuario 1: Visualización de las películas.
 
@@ -200,38 +199,42 @@ Con base en los resultados de la encuesta realizada a nuestro público objetivo,
   ![Alt text](baja-fidelidad.jpeg)
 
   * Prototipo de alta fidelidad:
-  
-  ![Alt text](<GHIBLIPEDIA-altafidelidad (1).jpg>)
 
+  ![Alt text](<GHIBLIPEDIA-altafidelidad (1).jpg>)
 
 
   * Colores: A partir de las respuestas de nuestro público objetivo, elegimos la gama de colores para la página y la distribución del contenido.
 
   ![Alt text](barra-colores.jpg)
 
+  * Diseño responsive: Se diseñó el proyecto de forma responsiva para que todos los elementos de la página pudieran visualizarse de forma adecuada tanto en las pantallas de computadora como en las de celulares y tabletas. 
+
+  ![Alt text](GHIBLIPEDIA-responsive.jpg)
+
+
   * Testeos de usabilidad.
+
+  A partir del feedback que recibimos por parte de nuestras compañeras y coaches, añadimos color al hacer click en una de las categorías para filtrar del lado izquierdo, así como al pasar el cursor por las categorías para ordenar del lado derecho. Además, añadimos un mensaje en el index cuando no se encontraran coincidencias entre el título que ingresó el usuario para buscar y las películas de la data.
+
+  ![Alt text](GHIBLIPEDIA-INDEX-interactions.jpg)
 
 
 ## 5. Pruebas unitarias
 
-Construimos las pruebas unitarias de las funciones, las cuales dieron una cobertura de 100% en sentencias, funciones y ramas.
+  Construimos las pruebas unitarias de las funciones, las cuales dieron una cobertura de 100% en sentencias, funciones y ramas.
 
-![Alt text](<Test Ghiblipedia.PNG>)
-
-
-## 6. Resultado de la interfaz
+  ![Alt text](<Test Ghiblipedia.PNG>)
 
 
+## 6. Estado del proyecto
 
-## 7. Estado del proyecto
-
-Se cumplieron todos los objetivos de aprendizaje para el punto de ser entregable, pero se considera en desarrollo porque haría falta completar el ideal del prototipo de nuestro proyecto, como que aparezca una ventana con los detalles de la película al dar click en cada póster.
+  Se cumplieron todos los objetivos de aprendizaje para el punto de ser entregable, pero se considera en desarrollo porque haría falta completar el ideal del prototipo de nuestro proyecto, como que aparezca una ventana con los detalles de la película al dar click en cada póster.
 
 
-## 8. Fundamentos
+## 7. Fundamentos
 
 HTML, CSS, JavaScript.
 
-## 9. Autoras
+## 8. Autoras
 
 Erika Nagaki y Leslie Garibay, 2023. 
