@@ -43,6 +43,10 @@ Al recibir las respuestas, nos dimos cuenta de que la mayor parte de nuestro pú
 
 ![Alt text](<Formulario 1.PNG>)
 
+![Alt text](<Formulario 2.PNG>)
+
+![Alt text](<Formulario 3.PNG>)
+
 
 ## 3. Historias de usuario
 
@@ -190,7 +194,21 @@ Con base en los resultados de la encuesta realizada a nuestro público objetivo,
 ## 4. Proceso de diseño de la interfaz de usuario
 
   * Prototipos de baja y alta fidelidad: Una vez definidas las historias de usuario, realizamos los prototipos de baja y alta fidelidad para visualizar las ideas que se formaron a partir de las necesidades de nuestro público objetivo. El diseño del prototipo de alta fidelidad fue diseñado en Figma.
+
+  * Prototipo de baja fidelidad:
+
+  ![Alt text](baja-fidelidad.jpeg)
+
+  * Prototipo de alta fidelidad:
+  
+  ![Alt text](<GHIBLIPEDIA-altafidelidad (1).jpg>)
+
+
+
   * Colores: A partir de las respuestas de nuestro público objetivo, elegimos la gama de colores para la página y la distribución del contenido.
+
+  ![Alt text](barra-colores.jpg)
+
   * Testeos de usabilidad.
 
 
