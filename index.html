@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>GhibliPedia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="index-header">
+    <div class="header-title-flexbox">
+      <img class="logo-ghiblipedia-index" src="img/pngwing.com (1).png" alt="logo-for-ghiblipedia">
+      <h1>GhibliPedia</h1>
+    </div>
+    <p1> A website where you can find all the information of Ghibli latest and oldest movies</p1>
+  </header>
+  <main>
+    <div class="search-container">
+      <div class="search-bar-block">
+        <input type="search" id="searchBar" class="input-search-movie" placeholder="Search by title">
+        <button type="submit" id="search-button"><img src="img/3331255.svg"></button>
+      </div>
+    </div>
+
+    <nav id="sort-section">
+      <div id="sort-by-button">
+        <ul id="ul-sort-container">
+          <li class="sortby-text">Sort by
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="svg" viewBox="0 0 16 16">
+            <path
+              d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            <style type="text/css">
+              @import url('style.css');
+            </style>
+          </svg>
+          </li>
+        </ul>
+        <ul class="options-to-click-sort-by">
+          <li class="sort-by-option" data-order="desc" data-property="release_date">Latest to oldest</li>
+          <li class="sort-by-option" data-order="asc" data-property="release_date">Oldest to latest</li>
+          <li class="sort-by-option" data-order="asc" data-property="title">A - Z</li>
+          <li class="sort-by-option" data-order="desc" data-property="title">Z - A</li>
+          <li class="sort-by-option" data-order="asc" data-property="rt_score">Tomatometer&#169 Lowest</li>
+          <li class="sort-by-option" data-order="desc" data-property="rt_score">Tomatometer&#169 Highest</li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="flexbox">
+      <aside class="flexbox-item1 filter-box">
+        <div class="flexbox-filter-list">
+          <p2>Filters</p2>
+          <div class="filter-list classification">
+            <button class="filter-list-button">Movie Classification</button>
+            <button class="sub-filter-list-button" data-property="classification" data-value="General Audience">General
+              Audience</button>
+            <button class="sub-filter-list-button" data-property="classification"
+              data-value="Parental Guidance Suggested">Parental Guidance Suggested</button>
+          </div>
+          <div class="filter-list director">
+            <button class="filter-list-button">Director</button>
+            <button class="sub-filter-list-button" data-property="director" data-value="Hayao Miyazaki">Hayao
+              Miyazaki</button>
+            <button class="sub-filter-list-button" data-property="director" data-value="Yoshifumi Kondō">Yoshifumi
+              Kondō</button>
+            <button class="sub-filter-list-button" data-property="director" data-value="Isao Takahata">Isao
+              Takahata</button>
+            <button class="sub-filter-list-button" data-property="director" data-value="Hiroyuki Morita">Hiroyuki
+              Morita</button>
+            <button class="sub-filter-list-button" data-property="director" data-value="Gorō Miyazaki">Gorō
+              Miyazaki</button>
+            <button class="sub-filter-list-button" data-property="director" data-value="Hiromasa Yonebayashi">Hiromasa
+              Yonebayashi</button>
+          </div>
+          <div class="filter-list producer">
+            <button class="filter-list-button">Producer</button>
+            <button class="sub-filter-list-button" data-property="producer" data-value="Hayao Miyazaki">Hayao
+              Miyazaki</button>
+            <button class="sub-filter-list-button" data-property="producer" data-value="Isao Takahata">Isao
+              Takahata</button>
+            <button class="sub-filter-list-button" data-property="producer" data-value="Yoshiaki Nishimura">Yoshiaki
+              Nishimura</button>
+            <button class="sub-filter-list-button" data-property="producer" data-value="Toru Hara">Toru Hara</button>
+            <button class="sub-filter-list-button" data-property="producer" data-value="Toshio Suzuki">Toshio
+              Suzuki</button>
+          </div>
+        </div>
+      </aside>
+      <section class="flexbox-item2 index-movies-library">
+        <template id="movie-template">
+          <div class="flexbox-container-library">
+            <article class="each-movie-article">
+              <img class="movie-poster" src="/img/Pom_Poko.webp" alt="poster-pompoko">
+              <p3 class="movie-title">Pom Poko</p3>
+              <p3 class="movie-year">(1994)</p3>
+            </article>
+          </div>
+        </template>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <img class="footer-image" src="img/pngwing.com (2).png" alt="imagen-en-footer-monitos" width="422px">
+    <div class="footer-info-section">
+      <p4>We are constantly trying to improve our website. Feel free to give us any suggestion <a href="https://forms.gle/nhMx92RsiCoTyhiK7">here</a>.
+        <br>© 2023 GHIBLIPEDIA.COM</p4>
+    </div>
+  </footer>
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+<!-- <footer>&#169 2023 GHIBLIPEDIA.COM - GHIBLI INFO FACTS MADE FOR FANS, BY FANS</footer> -->
+
+</html>
